@@ -18,17 +18,17 @@
         <div class="navigation">
             <ul>
                 <li><a runat="server" href="~/">Home</a></li>
-                <li><a runat="server" href="~/About">About</a></li>
-                <li><a runat="server" href="~/Contact">Contact</a></li>
+                <li><a runat="server" href="~/Parts">Parts</a></li>
+                <li><a runat="server" href="~/Contact">Contact Us</a></li>
             </ul>
         </div>
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
-            </footer>
+            <div class="footer">
+                <p>Footer</p>
+            </div>
         </div>
 
     </form>
