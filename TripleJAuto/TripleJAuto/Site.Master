@@ -15,20 +15,37 @@
 </head>
 <body>
     <form runat="server">
+        <div class="header">
+            <img src="Logo.png"  height="200px" width="350px" />
+        </div>
+
         <div class="navigation">
             <ul>
                 <li><a runat="server" href="~/">Home</a></li>
-                <li><a runat="server" href="~/Parts">Parts</a></li>
-                <li><a runat="server" href="~/Contact">Contact Us</a></li>
+                <li><a runat="server" href="~/Parts">Air Conditioning</a></li>
+                <li><a runat="server" href="~/Parts">Battery & Accessories</a></li>
+                <li><a runat="server" href="~/Parts">Belts & Hoses</a></li>
+                <li><a runat="server" href="~/Parts">Body & Trim</a></li>
+                <li><a runat="server" href="~/Brakes.aspx">Brakes</a></li>
+                <li><a runat="server" href="~/Parts">Cooling & Heating</a></li>
+                <li><a runat="server" href="~/Parts">Engine Parts & Mounts</a></li>
+                <li><a runat="server" href="~/Parts">Exhuast</a></li>
+                <li><a runat="server" href="~/Parts">Filters</a></li>
+                <li><a runat="server" href="~/Parts">Fuel & Emissions</a></li>
+                <li><a runat="server" href="~/Parts">Ignition & Tune-Up</a></li>
+                <li><a runat="server" href="~/Parts">Suspension & Steering</a></li>
+                <li><a runat="server" href="~/Parts">Tire & Wheel</a></li>
+                <li><a runat="server" href="~/Parts">Transmission</a></li>
             </ul>
         </div>
-        <div class="container body-content">
+
+        <div class="body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
-            <hr />
-            <div class="footer">
-                <p>Footer</p>
-            </div>
+        </div>
+
+        <div class="footer">
+            <p>footer</p>
         </div>
 
     </form>
