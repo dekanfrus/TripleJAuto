@@ -32,7 +32,9 @@ INSERT INTO [Category] (CategoryName) VALUES ('Air Conditioning');
 	INSERT INTO [Category] (CategoryName) VALUES ('Battery');
 	INSERT INTO [Category] (CategoryName) VALUES ('Belts and Hoses');
 	INSERT INTO [Category] (CategoryName) VALUES ('Body and Trim');
-	INSERT INTO [Category] (CategoryName) VALUES ('Brakes');
+	INSERT INTO [Category] (CategoryName) VALUES ('Brake Pads');
+	INSERT INTO [Category] (CategoryName) VALUES ('Brake Rotors');
+	INSERT INTO [Category] (CategoryName) VALUES ('Brake Calipers');
 	INSERT INTO [Category] (CategoryName) VALUES ('Engine Parts & Mounts');
 	INSERT INTO [Category] (CategoryName) VALUES ('Exhaust');
 	INSERT INTO [Category] (CategoryName) VALUES ('Filters');
@@ -41,80 +43,78 @@ INSERT INTO [Category] (CategoryName) VALUES ('Air Conditioning');
 	INSERT INTO [Category] (CategoryName) VALUES ('Suspension & Steering');
 	INSERT INTO [Category] (CategoryName) VALUES ('Tire & Wheel');
 	INSERT INTO [Category] (CategoryName) VALUES ('Transmission');
+
+-- Air Conditioning	
+INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('AC001', '1', 'A/C Compressor', '21', '194.99', 'A/C Compressor.  Tested up to 50k miles.');
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('AC002', '1', 'A/C Condensor', '18', '150.00', 'Meets or exceeds the performance of the original equipment');
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('AC003', '1', 'A/C Accumulator', '72', '34.99', 'The quality, durability, and reliability of all products are backed by over 50 years of excellence in mobile air conditioning experience and know how. Fix it once and fix it right with Everco by Four Seasons');
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('AC004', '1', 'A/C Adapter Fitting', '142', '15.99', 'Contains gaskets, o-rings, or seals to properly replace the product');
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('AC005', '1', 'A/C Clutch', '18', '58.99', 'Coated to prevent corrosion and every coil is tested for proper ohms');
+-- Battery	
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BT001', '2', '450 CCA Automobile Battery', '23', '199.99', 'For extreme conditions where the battery performs deep cycle & starting jobs!');
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BT002', '2', '700 CCA Automobile Battery', '13', '169.99', 'Specially designed paste to improve performance');
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BT003', '2', 'Gold Battery Cable', '47', '18.99', 'Black, 2 gauge cable, 56in with boots');
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BT004', '2', 'Battery Charger', '8', '699.99', '12 Volt, 70 amp output, 250 amp crank assist, UL rated safe in any weather');
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BT005', '2', 'Battery Cleaner', '22', '5.99', 'Battery terminal protection spray. 10oz can');
+-- Belts and Hoses	
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BH001', '3', 'Serpentine Belt', '10', '15.99', 'The specialized rubber incorporates a high temperature polymer formulated to maximize load carrying requirements and belt life');
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BH001', '3', 'Timing Belt', '12', '14.99', 'Provides exceptional resistance to abrasion; resulting in extended pulley and belt life');
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BH002', '3', 'V Belt', '15', '9.99', 'Made with bottom cogs to provide the maximum flexibility and grip required on v-belt drives');
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BH003', '3', 'Brake Hose - Rear', '13', '24.99', 'Quality construction ensures strength, chemical and thermal resistance for longer life');
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BH004', '3', 'Brake Hose - Front', '17', '22.99', 'Brake hoses with banjo end fittings include new copper washers to ensure proper sealing');
+-- Body and Trim	
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BT001', '4', 'Polished Aluminum Hood Scoop', '3', '269.99', 'Universal for single 4 barrel.  Fits carbs with 5-1/8in neck');
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BT002', '4', 'Bug Deflector', '7', '129.99', 'Mounts directly to the hood with no hardware or drilling');
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BT003', '4', 'Front End Cover', '2', '69.99', 'Glove like fit that contours to your vehicle');
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BT004', '4', 'Valance', '1', '172.99', 'Installs easily using 3M tape');
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BT005', '4', 'Vent Shade', '10', '49.99', 'Keeps rain out and lets fresh air in');
+-- Brake Pads	
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BP001', '5', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BP002', '5', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BP003', '5', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BP004', '5', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BP005', '5', );
+-- Brake Rotors	
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BR001', '6', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BR002', '6', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BR003', '6', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BR004', '6', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BR005', '6', );
+-- Brake Calipers	
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BC001', '7', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BC002', '7', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BC003', '7', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BC004', '7', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BC005', '7', );
 	
-INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('1', 'A/C Compressor', '21', '194.99', 'A/C Compressor.  Tested up to 50k miles.');
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('1', 'A/C Condensor', '18', '150.00', 'Innovative engineering, manufacturing technology and quality control ensure that Spectra Premium condensers meet or exceed the performance of the original equipment they replace.');
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('1', 'A/C Accumulator', '72', '34.99', 'The quality, durability, and reliability of all products are backed by over 50 years of excellence in mobile air conditioning experience and know how. Fix it once and fix it right with Everco by Four Seasons');
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('1', 'A/C Adapter Fitting', '142', '15.99', 'Contains gaskets, o-rings, or seals to properly replace the product');
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('1', 'A/C Clutch', '18', '58.99', 'Coated to prevent corrosion and Every coil is tested for proper ohms');
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('2', '450 CCA Automobile Battery', '23', '199.99', 'Optima YellowTop Deep Cycle & Starting Battery for extreme conditions where the battery performs deep cycle & starting jobs!');
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('2', '700 CCA Automobile Battery', '13', '169.99', 'Specially designed paste to improve performance');
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('2', 'Gold Battery Cable', '47', '18.99', 'Black, 2 gauge cable, 56in with boots');
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('2', 'Battery Charger', '8', '699.99', '12 Volt, 70 amp output, 250 amp crank assist, UL rated safe in any weather');
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('2', 'Battery Cleaner', '22', '5.99', 'Battery terminal protection spray. 10oz can');
-	
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('3', 'Serpentine Belt', '10', '15.99', 'The specialized rubber incorporates a high temperature polymer formulated to maximize load carrying requirements and belt life');
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('3', 'Timing Belt', '12', '14.99', 'Provides exceptional resistance to abrasion; resulting in extended pulley and belt life');
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('3', 'V Belt', '15', '9.99', 'Made with bottom cogs to provide the maximum flexibility and grip required on v-belt drives');
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('3', 'Brake Hose - Rear', '13', '24.99', 'Quality construction ensures strength, chemical and thermal resistance for longer life');
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('3', 'Brake Hose - Front', '17', '22.99', 'Brake hoses with banjo end fittings include new copper washers to ensure proper sealing');
-	
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('4', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('4', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('4', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('4', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('4', );
-	
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('5', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('5', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('5', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('5', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('5', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('6', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('6', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('6', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('6', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('6', );
-	
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('7', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('7', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('7', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('7', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('7', );
-	
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('8', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('8', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('8', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('8', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('8', );
-	
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('9', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('9', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('9', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('9', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('9', );
-	
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('10', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('10', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('10', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('10', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('10', );
-	
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('11', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('11', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('11', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('11', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('11', );
-	
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('12', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('12', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('12', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('12', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('12', );
-	
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('13', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('13', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('13', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('13', );
-	INSERT INTO [Part] (CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('13', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('8', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('8', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('8', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('8', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('8', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('9', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('9', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('9', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('9', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('9', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('10', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('10', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('10', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('10', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('10', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('11', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('11', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('11', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('11', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('11', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('12', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('12', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('12', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('12', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('12', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('13', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('13', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('13', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('13', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('13', );
 	
