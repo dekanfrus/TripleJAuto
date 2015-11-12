@@ -11,17 +11,13 @@ namespace TripleJAuto
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-                        
+            MultiView1.ActiveViewIndex = 0;
         }
 
         protected void btnViewUsers_Click(object sender, EventArgs e)
         {
-            MultiView1.ActiveViewIndex = 1;
-        }
-
-        protected void btnAddUser_Click(object sender, EventArgs e)
-        {
             MultiView1.ActiveViewIndex = 0;
         }
+
     }
 }
