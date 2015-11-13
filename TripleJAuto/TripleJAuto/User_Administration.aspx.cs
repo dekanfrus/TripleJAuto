@@ -15,10 +15,14 @@ namespace TripleJAuto
              // Put Username from Cookie into SQL Query
              // Use Query to check for admin rights
              // If user is not admin, redirect to home page           
-            MultiView1.ActiveViewIndex = 0;
         }
 
         protected void btnViewUsers_Click(object sender, EventArgs e)
+        {
+            MultiView1.ActiveViewIndex = 1;
+        }
+
+        protected void btnViewEdit_Click(object sender, EventArgs e)
         {
             MultiView1.ActiveViewIndex = 0;
         }
