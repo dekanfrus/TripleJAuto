@@ -1,6 +1,6 @@
 ﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Parts.master.cs" Inherits="TripleJAuto.Parts" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <asp:ContentPlaceHolder ID="Brakes" runat="server">
+    <asp:ContentPlaceHolder ID="content" runat="server">
     </asp:ContentPlaceHolder>
 </asp:Content>

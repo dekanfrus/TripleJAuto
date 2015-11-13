@@ -35,23 +35,22 @@
     width: 72%;
 }
 
-.footer {
-    width: 100%;
-    text-align: center;
-    color: #539ca5;
-    padding-top: 2%;
-}
-
 .container {
-    width: 100%;
     height: auto;
+    color: #539ca5;
     font-family: Helvetica;
     padding-left: 5%;
 }
 
+.container-header {
+    width: 50%;
+    text-align: center;
+}
+
 .container table {
-   width: auto;
+   width: 50%;
    height: auto;
+   text-align: center;
 }
 
 .container table tr {
@@ -64,4 +63,65 @@
     font-size: 30px;
     text-align: center;
     padding: 1% 0px;
+}
+
+.container a {
+    text-decoration: none;
+    color: #539ca5;
+    padding: 8px 8px 8px 8px;
+}
+
+.home-container {
+    height: auto;
+    color: #539ca5;
+    font-family: Helvetica;
+    padding-left: 5%;
+}
+
+.home-header {
+    width: 50%;
+    text-align: center;
+}
+
+.home-container table {
+   width: 50%;
+   height: auto;
+   text-align: center; 
+}
+
+.home-container table tr {
+    color: #539ca5;
+}
+
+.home-container table td {
+    width: 30%;
+    color: #539ca5;
+    font-size: 30px;
+    text-align: center;
+    padding: 1% 0px;
+}
+
+.home-container a {
+    text-decoration: none;
+    color: #539ca5;
+    padding: 8px 8px 8px 8px;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    color: #539ca5;
+    margin: 0 auto;
+    padding-top: 6%;
+    padding-bottom: 2%;
+    position: absolute;
+    bottom: -125px;
+    left: 5px;
+}
+
+.footer a {
+    text-decoration: none;
+    font-family: Helvetica;
+    color: #539ca5;
+    padding: 8px 8px 8px 8px;
 }
