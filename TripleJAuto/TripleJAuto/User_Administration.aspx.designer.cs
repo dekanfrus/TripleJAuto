@@ -31,15 +31,6 @@ namespace TripleJAuto {
         protected global::System.Web.UI.WebControls.MultiView MultiView1;
         
         /// <summary>
-        /// ViewDetails control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.View ViewDetails;
-        
-        /// <summary>
         /// ViewUsers control.
         /// </summary>
         /// <remarks>

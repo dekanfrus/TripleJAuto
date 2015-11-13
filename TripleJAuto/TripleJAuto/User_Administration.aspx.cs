@@ -17,14 +17,36 @@ namespace TripleJAuto
              // If user is not admin, redirect to home page           
         }
 
-        protected void btnViewUsers_Click(object sender, EventArgs e)
+        protected void Page_Prerender(object sender, EventArgs e)
         {
-            MultiView1.ActiveViewIndex = 1;
+            if (GridView1.SelectedRow == null)
+            {
+                DetailsView1.Visible = false;
+            }
+            else DetailsView1.Visible = true;
         }
 
-        protected void btnViewEdit_Click(object sender, EventArgs e)
+        protected void btnViewUsers_Click(object sender, EventArgs e)
         {
             MultiView1.ActiveViewIndex = 0;
+        }
+
+        protected void DetailsView1_ItemUpdated(object sender, DetailsViewUpdatedEventArgs e)
+        {
+            GridView1.DataBind();
+            GridView1.SelectRow(-1);
+        }
+
+        protected void DetailsView1_ItemDeleted(object sender, DetailsViewDeletedEventArgs e)
+        {
+            GridView1.DataBind();
+            GridView1.SelectRow(-1);
+        }
+
+        protected void DetailsView1_ItemInserted(object sender, DetailsViewInsertedEventArgs e)
+        {
+            GridView1.DataBind();
+            GridView1.SelectRow(-1)
         }
     }
 }

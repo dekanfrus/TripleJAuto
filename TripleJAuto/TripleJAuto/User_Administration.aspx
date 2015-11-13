@@ -30,8 +30,6 @@
             </table>
     </div>
     <asp:MultiView ID="MultiView1" runat="server">
-        <asp:View ID="ViewDetails" runat="server">
-        </asp:View>
         <asp:View ID="ViewUsers" runat="server">
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:WebsiteConnectionString %>" DeleteCommand="DELETE FROM [User] WHERE [UserID] = @UserID" InsertCommand="INSERT INTO [User] ([UserUsername], [UserPassword], [UserEmail], [UserFName], [UserLName], [UserStreet], [UserCity], [UserZip], [UserCountry], [UserPhone], [UserAdmin]) VALUES (@UserUsername, @UserPassword, @UserEmail, @UserFName, @UserLName, @UserStreet, @UserCity, @UserZip, @UserCountry, @UserPhone, @UserAdmin)" SelectCommand="SELECT * FROM [User]" UpdateCommand="UPDATE [User] SET [UserUsername] = @UserUsername, [UserPassword] = @UserPassword, [UserEmail] = @UserEmail, [UserFName] = @UserFName, [UserLName] = @UserLName, [UserStreet] = @UserStreet, [UserCity] = @UserCity, [UserZip] = @UserZip, [UserCountry] = @UserCountry, [UserPhone] = @UserPhone, [UserAdmin] = @UserAdmin WHERE [UserID] = @UserID">
                 <DeleteParameters>
@@ -107,7 +105,6 @@
                         <asp:CommandField ShowDeleteButton="True" ShowSelectButton="True" />
                          <asp:BoundField DataField="UserID" HeaderText="UserID" InsertVisible="False" ReadOnly="True" SortExpression="UserID" />
                         <asp:BoundField DataField="UserUsername" HeaderText="UserUsername" SortExpression="UserUsername" />
-                        <asp:BoundField DataField="UserPassword" HeaderText="UserPassword" SortExpression="UserPassword" />
                         <asp:BoundField DataField="UserEmail" HeaderText="UserEmail" SortExpression="UserEmail" />
                         <asp:BoundField DataField="UserFName" HeaderText="UserFName" SortExpression="UserFName" />
                         <asp:BoundField DataField="UserLName" HeaderText="UserLName" SortExpression="UserLName" />
@@ -129,7 +126,7 @@
                     <SortedDescendingHeaderStyle BackColor="#575357" />
                 </asp:GridView>
                 <br />
-                <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" CellSpacing="2" DataKeyNames="UserID" DataSourceID="SqlDataSource2" ForeColor="Black" Height="50px" Width="164px">
+                <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" CellSpacing="2" DataKeyNames="UserID" DataSourceID="SqlDataSource2" ForeColor="Black" Height="50px" OnItemDeleted="DetailsView1_ItemDeleted" OnItemInserted="DetailsView1_ItemInserted" OnItemUpdated="DetailsView1_ItemUpdated" Width="164px">
                     <EditRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
                     <Fields>
                         <asp:BoundField DataField="UserID" HeaderText="UserID" InsertVisible="False" ReadOnly="True" SortExpression="UserID" />
