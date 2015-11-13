@@ -46,7 +46,7 @@ namespace TripleJAuto
         protected void DetailsView1_ItemInserted(object sender, DetailsViewInsertedEventArgs e)
         {
             GridView1.DataBind();
-            GridView1.SelectRow(-1)
+            GridView1.SelectRow(-1);
         }
     }
 }
