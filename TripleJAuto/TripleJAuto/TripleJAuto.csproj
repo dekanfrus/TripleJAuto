@@ -149,34 +149,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
-    <Content Include="ac_clutch.jpg" />
-    <Content Include="ac_compressor.jpg" />
-    <Content Include="ac_expansion.jpg" />
-    <Content Include="batteries.jpg" />
-    <Content Include="batterychargers.jpg" />
-    <Content Include="batteryterminal.jpg" />
-    <Content Include="belts.jpg" />
-    <Content Include="blower_motor.jpg" />
-    <Content Include="bodyparts.jpg" />
-    <Content Include="brakes.jpg" />
-    <Content Include="caliper.jpg" />
-    <Content Include="camshaft.jpg" />
-    <Content Include="clamp.jpg" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="cylinderheads.jpg" />
-    <Content Include="distributor.jpg" />
-    <Content Include="fasteners.jpg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="hoses.jpg" />
     <Content Include="Logo.png" />
-    <Content Include="mounts.jpg" />
-    <Content Include="muffler.jpg" />
-    <Content Include="paint.jpg" />
     <Content Include="Parts.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -196,7 +176,6 @@
     <Content Include="ac_blower.aspx" />
     <Content Include="belts.aspx" />
     <Content Include="hoses.aspx" />
-    <Content Include="pipe.jpg" />
     <Content Include="rotors.aspx" />
     <Content Include="pads.aspx" />
     <Content Include="calipers.aspx" />
@@ -211,7 +190,6 @@
     <Content Include="mounts.aspx" />
     <Content Include="cylinderHeads.aspx" />
     <Content Include="camshaftsCranks.aspx" />
-    <Content Include="rotors.jpg" />
     <Content Include="timingParts.aspx" />
     <Content Include="clamps.aspx" />
     <Content Include="pipe.aspx" />
@@ -227,7 +205,6 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
-    <Content Include="tips.jpg" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="Parts.master" />
