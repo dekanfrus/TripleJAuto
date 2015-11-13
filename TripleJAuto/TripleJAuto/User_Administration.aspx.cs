@@ -26,6 +26,5 @@ namespace TripleJAuto
         {
             MultiView1.ActiveViewIndex = 0;
         }
-
     }
 }

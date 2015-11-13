@@ -22,15 +22,6 @@ namespace TripleJAuto {
         protected global::System.Web.UI.WebControls.Button btnViewUsers;
         
         /// <summary>
-        /// btnViewEdit control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnViewEdit;
-        
-        /// <summary>
         /// MultiView1 control.
         /// </summary>
         /// <remarks>
@@ -47,15 +38,6 @@ namespace TripleJAuto {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.View ViewDetails;
-        
-        /// <summary>
-        /// DetailsView1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DetailsView DetailsView1;
         
         /// <summary>
         /// ViewUsers control.
@@ -92,5 +74,14 @@ namespace TripleJAuto {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridView1;
+        
+        /// <summary>
+        /// DetailsView1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DetailsView DetailsView1;
     }
 }
