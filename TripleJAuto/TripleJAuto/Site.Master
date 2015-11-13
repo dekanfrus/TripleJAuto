@@ -27,8 +27,8 @@
                 <li><a runat="server" href="~/BeltsHoses.aspx">Belts & Hoses</a></li>
                 <li><a runat="server" href="~/BodyTrim.aspx">Body & Trim</a></li>
                 <li><a runat="server" href="~/Brakes.aspx">Brakes</a></li>
-                <li><a runat="server" href="~/Parts">Engine Parts & Mounts</a></li>
-                <li><a runat="server" href="~/Parts">Exhuast</a></li>
+                <li><a runat="server" href="~/engineParts.aspx">Engine Parts & Mounts</a></li>
+                <li><a runat="server" href="~/exhaust.aspx">Exhuast</a></li>
                 <li><a runat="server" href="~/Parts">Filters</a></li>
                 <li><a runat="server" href="~/Parts">Fuel & Emissions</a></li>
                 <li><a runat="server" href="~/Parts">Ignition & Tune-Up</a></li>

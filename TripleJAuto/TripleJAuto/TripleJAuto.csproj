@@ -185,7 +185,7 @@
     <Content Include="fasteners.aspx" />
     <Content Include="paint.aspx" />
     <Content Include="engineParts.aspx" />
-    <Content Include="exhuast.aspx" />
+    <Content Include="exhaust.aspx" />
     <Content Include="mounts.aspx" />
     <Content Include="cylinderHeads.aspx" />
     <Content Include="camshaftsCranks.aspx" />
@@ -410,12 +410,12 @@
     <Compile Include="engineParts.aspx.designer.cs">
       <DependentUpon>engineParts.aspx</DependentUpon>
     </Compile>
-    <Compile Include="exhuast.aspx.cs">
-      <DependentUpon>exhuast.aspx</DependentUpon>
+    <Compile Include="exhaust.aspx.cs">
+      <DependentUpon>exhaust.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="exhuast.aspx.designer.cs">
-      <DependentUpon>exhuast.aspx</DependentUpon>
+    <Compile Include="exhaust.aspx.designer.cs">
+      <DependentUpon>exhaust.aspx</DependentUpon>
     </Compile>
     <Compile Include="mounts.aspx.cs">
       <DependentUpon>mounts.aspx</DependentUpon>
