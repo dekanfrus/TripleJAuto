@@ -21,13 +21,12 @@
 
         <div class="navigation">
             <ul>
-                <li><a runat="server" href="~/">Home</a></li>
-                <li><a runat="server" href="~/Parts">Air Conditioning</a></li>
-                <li><a runat="server" href="~/Parts">Battery & Accessories</a></li>
-                <li><a runat="server" href="~/Parts">Belts & Hoses</a></li>
-                <li><a runat="server" href="~/Parts">Body & Trim</a></li>
+                <li><a runat="server" href="~/Home.aspx">Home</a></li>
+                <li><a runat="server" href="~/AirConditioning.aspx">Air Conditioning</a></li>
+                <li><a runat="server" href="~/BatteryAccessories.aspx">Battery & Accessories</a></li>
+                <li><a runat="server" href="~/BeltsHoses.aspx">Belts & Hoses</a></li>
+                <li><a runat="server" href="~/BodyTrim.aspx">Body & Trim</a></li>
                 <li><a runat="server" href="~/Brakes.aspx">Brakes</a></li>
-                <li><a runat="server" href="~/Parts">Cooling & Heating</a></li>
                 <li><a runat="server" href="~/Parts">Engine Parts & Mounts</a></li>
                 <li><a runat="server" href="~/Parts">Exhuast</a></li>
                 <li><a runat="server" href="~/Parts">Filters</a></li>
@@ -45,7 +44,8 @@
         </div>
 
         <div class="footer">
-            <p>footer</p>
+            <a runat="server" href="~/About.aspx">About Us</a>
+            <a runat="server" href="~/Contact.aspx">Contact Us</a>
         </div>
 
     </form>

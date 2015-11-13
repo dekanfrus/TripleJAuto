@@ -164,6 +164,36 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Brakes.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="AirConditioning.aspx" />
+    <Content Include="BatteryAccessories.aspx" />
+    <Content Include="BeltsHoses.aspx" />
+    <Content Include="BodyTrim.aspx" />
+    <Content Include="ac_compressor.aspx" />
+    <Content Include="ac_clutch.aspx" />
+    <Content Include="ac_expansion.aspx" />
+    <Content Include="ac_blower.aspx" />
+    <Content Include="belts.aspx" />
+    <Content Include="hoses.aspx" />
+    <Content Include="rotors.aspx" />
+    <Content Include="pads.aspx" />
+    <Content Include="calipers.aspx" />
+    <Content Include="batteries.aspx" />
+    <Content Include="batteryChargers.aspx" />
+    <Content Include="batteryTerminals.aspx" />
+    <Content Include="bodyParts.aspx" />
+    <Content Include="fasteners.aspx" />
+    <Content Include="paint.aspx" />
+    <Content Include="engineParts.aspx" />
+    <Content Include="exhuast.aspx" />
+    <Content Include="mounts.aspx" />
+    <Content Include="cylinderHeads.aspx" />
+    <Content Include="camshaftsCranks.aspx" />
+    <Content Include="timingParts.aspx" />
+    <Content Include="clamps.aspx" />
+    <Content Include="pipe.aspx" />
+    <Content Include="muffler.aspx" />
+    <Content Include="tips.aspx" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -232,6 +262,216 @@
     </Compile>
     <Compile Include="Brakes.aspx.designer.cs">
       <DependentUpon>Brakes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AirConditioning.aspx.cs">
+      <DependentUpon>AirConditioning.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AirConditioning.aspx.designer.cs">
+      <DependentUpon>AirConditioning.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BatteryAccessories.aspx.cs">
+      <DependentUpon>BatteryAccessories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BatteryAccessories.aspx.designer.cs">
+      <DependentUpon>BatteryAccessories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BeltsHoses.aspx.cs">
+      <DependentUpon>BeltsHoses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BeltsHoses.aspx.designer.cs">
+      <DependentUpon>BeltsHoses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BodyTrim.aspx.cs">
+      <DependentUpon>BodyTrim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BodyTrim.aspx.designer.cs">
+      <DependentUpon>BodyTrim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ac_compressor.aspx.cs">
+      <DependentUpon>ac_compressor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ac_compressor.aspx.designer.cs">
+      <DependentUpon>ac_compressor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ac_clutch.aspx.cs">
+      <DependentUpon>ac_clutch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ac_clutch.aspx.designer.cs">
+      <DependentUpon>ac_clutch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ac_expansion.aspx.cs">
+      <DependentUpon>ac_expansion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ac_expansion.aspx.designer.cs">
+      <DependentUpon>ac_expansion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ac_blower.aspx.cs">
+      <DependentUpon>ac_blower.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ac_blower.aspx.designer.cs">
+      <DependentUpon>ac_blower.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="belts.aspx.cs">
+      <DependentUpon>belts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="belts.aspx.designer.cs">
+      <DependentUpon>belts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hoses.aspx.cs">
+      <DependentUpon>hoses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hoses.aspx.designer.cs">
+      <DependentUpon>hoses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rotors.aspx.cs">
+      <DependentUpon>rotors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rotors.aspx.designer.cs">
+      <DependentUpon>rotors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pads.aspx.cs">
+      <DependentUpon>pads.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pads.aspx.designer.cs">
+      <DependentUpon>pads.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="calipers.aspx.cs">
+      <DependentUpon>calipers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="calipers.aspx.designer.cs">
+      <DependentUpon>calipers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="batteries.aspx.cs">
+      <DependentUpon>batteries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="batteries.aspx.designer.cs">
+      <DependentUpon>batteries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="batteryChargers.aspx.cs">
+      <DependentUpon>batteryChargers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="batteryChargers.aspx.designer.cs">
+      <DependentUpon>batteryChargers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="batteryTerminals.aspx.cs">
+      <DependentUpon>batteryTerminals.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="batteryTerminals.aspx.designer.cs">
+      <DependentUpon>batteryTerminals.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bodyParts.aspx.cs">
+      <DependentUpon>bodyParts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bodyParts.aspx.designer.cs">
+      <DependentUpon>bodyParts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fasteners.aspx.cs">
+      <DependentUpon>fasteners.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fasteners.aspx.designer.cs">
+      <DependentUpon>fasteners.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paint.aspx.cs">
+      <DependentUpon>paint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paint.aspx.designer.cs">
+      <DependentUpon>paint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="engineParts.aspx.cs">
+      <DependentUpon>engineParts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="engineParts.aspx.designer.cs">
+      <DependentUpon>engineParts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="exhuast.aspx.cs">
+      <DependentUpon>exhuast.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="exhuast.aspx.designer.cs">
+      <DependentUpon>exhuast.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mounts.aspx.cs">
+      <DependentUpon>mounts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mounts.aspx.designer.cs">
+      <DependentUpon>mounts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cylinderHeads.aspx.cs">
+      <DependentUpon>cylinderHeads.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cylinderHeads.aspx.designer.cs">
+      <DependentUpon>cylinderHeads.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="camshaftsCranks.aspx.cs">
+      <DependentUpon>camshaftsCranks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="camshaftsCranks.aspx.designer.cs">
+      <DependentUpon>camshaftsCranks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="timingParts.aspx.cs">
+      <DependentUpon>timingParts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="timingParts.aspx.designer.cs">
+      <DependentUpon>timingParts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="clamps.aspx.cs">
+      <DependentUpon>clamps.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="clamps.aspx.designer.cs">
+      <DependentUpon>clamps.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pipe.aspx.cs">
+      <DependentUpon>pipe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pipe.aspx.designer.cs">
+      <DependentUpon>pipe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="muffler.aspx.cs">
+      <DependentUpon>muffler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="muffler.aspx.designer.cs">
+      <DependentUpon>muffler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tips.aspx.cs">
+      <DependentUpon>tips.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tips.aspx.designer.cs">
+      <DependentUpon>tips.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
