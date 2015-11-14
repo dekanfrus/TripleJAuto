@@ -407,9 +407,9 @@ INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc)
 	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('CP002', '20', );
 	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('CP003', '20', );
 -- Pipe - ID 21
-	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('PP001', '21', );
-	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('PP002', '21', );
-	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('PP003', '21', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('PP001', '21', 'Walker Exhaust Pipe', '17', '49.99', 'Manufactured from aluminized steel for durability');
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('PP002', '21', 'Bosal Exhaust Pipe', '31', '69.99', 'Direct fit OEM replacement.  Eliminates the need for pipe bending, welding, or cutting');
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('PP003', '21', 'Walker Quiet-Flow', '13', '169.99', '100% structural stainless steel construction');
 -- Muffler - ID 22
 	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('MF001', '22', );
 	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('MF002', '22', );
