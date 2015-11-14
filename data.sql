@@ -120,22 +120,6 @@ GO
 SET ANSI_PADDING ON
 GO
 
-USE [Website]
-GO
-
-USE [Website]
-GO
-
-/****** Object:  Table [dbo].[Category]    Script Date: 11/13/2015 7:10:01 PM ******/
-SET ANSI_NULLS ON
-GO
-
-SET QUOTED_IDENTIFIER ON
-GO
-
-SET ANSI_PADDING ON
-GO
-
 CREATE TABLE [dbo].[Category](
 	[CategoryID] [int] IDENTITY(1,1) NOT NULL,
 	[CategoryName] [varchar](50) NOT NULL,
@@ -154,7 +138,6 @@ GO
 USE [Website]
 GO
 
-/****** Object:  Table [dbo].[Part]    Script Date: 11/13/2015 7:09:14 PM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -189,7 +172,6 @@ GO
 ALTER TABLE [dbo].[Part] CHECK CONSTRAINT [FK_Part_Category]
 GO
 
-/****** Object:  Table [dbo].[User]    Script Date: 11/13/2015 7:07:00 PM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -219,7 +201,7 @@ GO
 
 USE [Website]
 GO
-/****** Object:  Table [dbo].[Review]    Script Date: 11/13/2015 7:07:31 PM ******/
+
 SET ANSI_NULLS ON
 GO
 
@@ -263,7 +245,6 @@ GO
 USE [Website]
 GO
 
-/****** Object:  Table [dbo].[Wishlist]    Script Date: 11/13/2015 7:07:45 PM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -343,13 +324,6 @@ INSERT INTO [Category] (CategoryName) VALUES ('A/C Compressor');
 	INSERT INTO [Category] (CategoryName) VALUES ('Pipe');
 	INSERT INTO [Category] (CategoryName) VALUES ('Muffler');
 	INSERT INTO [Category] (CategoryName) VALUES ('Tips');
-	
-	INSERT INTO [Category] (CategoryName) VALUES ('Filters');
-	INSERT INTO [Category] (CategoryName) VALUES ('Fuel & Emissions');
-	INSERT INTO [Category] (CategoryName) VALUES ('Ignition & Tune-Up');
-	INSERT INTO [Category] (CategoryName) VALUES ('Suspension & Steering');
-	INSERT INTO [Category] (CategoryName) VALUES ('Tire & Wheel');
-	INSERT INTO [Category] (CategoryName) VALUES ('Transmission');
 
 -- A/C Compressor - ID 1
 INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('AC001', '1', 'Compressor Works', '21', '194.99', 'Each unit is assembled with ICE32 lubricant to reduce internal friction promoting enhanced system performance and longevity.');
@@ -444,9 +418,5 @@ INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc)
 	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('TP001', '23', );
 	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('TP002', '23', );
 	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('TP003', '23', );
-
-	
-	
-	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('', );
 	
 	
