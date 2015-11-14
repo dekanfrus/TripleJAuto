@@ -12,8 +12,8 @@
                 <td><a runat="server" href="~/ac_clutch.aspx">A/C Clutch</a></td>
             </tr>
             <tr>
-                <td><img src="ac_compressor.jpg" height='200px' width='200px' /></td>
-                <td><img src="ac_clutch.jpg" height='200px' width='200px' /></td>
+                <td><img src="images\ac_compressor.jpg" height='200px' width='200px' /></td>
+                <td><img src="images\ac_clutch.jpg" height='200px' width='200px' /></td>
             </tr>
             <tr>
                 <td><a runat="server" href="~/ac_expansion.aspx">A/C Expansion</a></td>
