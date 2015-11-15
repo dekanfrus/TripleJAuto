@@ -399,24 +399,24 @@ INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc)
 	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('CC002', '18', 'Melling Camshaft', '7', '109.99', 'OEM hydraulic camshaft');
 	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('CC003', '18', 'Edelbrock Camshaft', '2', '99.99', 'Performance grade camshaft');
 -- Timing Parts - ID 19
-	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('TP001', '19', );
-	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('TP002', '19', );
-	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('TP003', '19', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('TG001', '19', 'Timing Kit', '21', '59.99', 'Precision machined parts for a perfect fit');
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('TG002', '19', 'Timing Chain', '38', '11.99', 'Chains assembled on state of the art automated machines');
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('TG003', '19', 'Dorman Timing Cover', '18', '69.99', 'High quality plastic or metal construction resists warping, cracking and porousness');
 -- Clamps - ID 20
-	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('CP001', '20', );
-	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('CP002', '20', );
-	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('CP003', '20', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('CP001', '20', 'Superior Lowering Clamp', '49', '16.99', 'Easy to lower or tune down most any coil or strut spring suspension in minutes without breaking the bank');
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('CP002', '20', 'Superior RideEFFEX Clamp Kit', '37', '16.99', 'Individual leaf springs are loacked together and stabilized with these clamps.');
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('CP003', '20', 'Bulldog Curved Clamp', '11', '99.99', 'The Bulldog tenaciously grabs and holds onto the curved pinch weld where other clamps wont attach.');
 -- Pipe - ID 21
 	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('PP001', '21', 'Walker Exhaust Pipe', '17', '49.99', 'Manufactured from aluminized steel for durability');
 	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('PP002', '21', 'Bosal Exhaust Pipe', '31', '69.99', 'Direct fit OEM replacement.  Eliminates the need for pipe bending, welding, or cutting');
 	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('PP003', '21', 'Walker Quiet-Flow', '13', '169.99', '100% structural stainless steel construction');
 -- Muffler - ID 22
-	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('MF001', '22', );
-	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('MF002', '22', );
-	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('MF003', '22', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('MF001', '22', 'Walker SoundFX', '3', '39.99', 'Aluminized steel construction for corrosion resistance and durability');
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('MF002', '22', 'Walker Quiet-Flow', '7', '89.99', '3X the life expectancy vs. typical aluminized mufflers');
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('MF003', '22', 'Bosal', '10', '120.99', 'Easy installation. Bolt off bolt on. Eliminates the need for pipe bending, welding or cutting.');
 -- Tips - ID 23
-	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('TP001', '23', );
-	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('TP002', '23', );
-	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('TP003', '23', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('TP001', '23', 'Walker Exhaust Pipe Tip', '12', '11.99', 'Manufactured with precision benders for easy installation');
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('TP002', '23', 'ROL Dual Exhaust Tip', '8', '13.99', 'Dresses up vehicle appearance with stylish chrome exhaust tip');
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('TP003', '23', 'ROL Black Slant Tip', '18', '10.99', 'Bolt-On, Chrome, Black Finish, 9 Inch Length, 2-3/8 Inch Inlet');
 	
 	
