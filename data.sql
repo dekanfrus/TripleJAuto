@@ -375,17 +375,17 @@ INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc)
 	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('PT002', '15', 'VHT Paints', '17', '7.98', 'Fire Truck Red');
 	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('PT003', '15', 'Duplicolor Perfect Match', '13', '7.99', 'Avignon Blue Metallic');
 -- Mounts - ID 16
-	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('MT001', '16', );
-	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('MT002', '16', );
-	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('MT003', '16', );
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('MT001', '16', 'Westin Step Bar', '9', '99.99', 'Nerf Step Bar. Standard Cab');
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('MT002', '16', 'Westin Signature Step Bar', '4', '129.99', 'Chrome Nerf Step Bar. Standard Cab');
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('MT003', '16', 'Westin Platinum Step Bar', '1', '169.99', 'Black Steel Nerf Step Bar. Standard Cab');
 -- Battery - ID 10
-	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BT001', '10', '450 CCA Automobile Battery', '23', '199.99', 'For extreme conditions where the battery performs deep cycle & starting jobs!');
-	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BT002', '10', '700 CCA Automobile Battery', '13', '169.99', 'Specially designed paste to improve performance');
-	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BT003', '10', 'Super Start Extreme', '8', '121.99', 'Delivers high cranking power for quick starts');
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BA001', '10', '450 CCA Automobile Battery', '23', '199.99', 'For extreme conditions where the battery performs deep cycle & starting jobs!');
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BA002', '10', '700 CCA Automobile Battery', '13', '169.99', 'Specially designed paste to improve performance');
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BA003', '10', 'Super Start Extreme', '8', '121.99', 'Delivers high cranking power for quick starts');
 -- Battery Chargers - ID 11	
-	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BC001', '11', 'Schumaker Fleet Rated Charger', '8', '699.99', '12 Volt, 70 amp output, 250 amp crank assist, UL rated safe in any weather');
-	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BC002', '11', 'Schumaker Mountable Battery Charger', '3', '90.00', 'Fully Automatic Microprocessor Control');
-	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BC003', '11', 'Schumaker Multi Batter Charging Station', '2', '999.99', 'Eight Independent Charging Banks');
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BS001', '11', 'Schumaker Fleet Rated Charger', '8', '699.99', '12 Volt, 70 amp output, 250 amp crank assist, UL rated safe in any weather');
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BS002', '11', 'Schumaker Mountable Battery Charger', '3', '90.00', 'Fully Automatic Microprocessor Control');
+	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BS003', '11', 'Schumaker Multi Batter Charging Station', '2', '999.99', 'Eight Independent Charging Banks');
 -- Battery Terminals - ID 12
 	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BY001', '12', 'Super Start - Side Terminal', '82', '5.99', 'For Post Terminal Batteries');
 	INSERT INTO [Part] (PartID, CategoryID, PartName, PartCount, PartCost, PartDesc) VALUES ('BY002', '12', 'Super Start - Battery Charge Post', '66', '3.49', 'Charging Post With Ears');
