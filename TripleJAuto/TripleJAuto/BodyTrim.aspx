@@ -12,15 +12,15 @@
                 <td><a runat="server" href="~/fasteners.aspx">Fasteners</a></td>
             </tr>
             <tr>
-                <td><img src="bodyparts.jpg" height='200px' width='200px' /></td>
-                <td><img src="fasteners.jpg" height='200px' width='200px' /></td>
+                <td><img src="/images/bodyparts.jpg" height='200px' width='200px' /></td>
+                <td><img src="/images/fasteners.jpg" height='200px' width='200px' /></td>
             </tr>
             <tr>
                 <td><a runat="server" href="~/paint.aspx">Paint</a></td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td><img src="paint.jpg" height='200px' width='200px' /></td>
+                <td><img src="/images/paint.jpg" height='200px' width='200px' /></td>
                 <td>&nbsp;</td>
             </tr>
         </table>

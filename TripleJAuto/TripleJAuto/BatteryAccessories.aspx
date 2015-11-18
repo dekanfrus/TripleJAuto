@@ -12,15 +12,15 @@
                 <td><a runat="server" href="~/batteryChargers.aspx">Battery Chargers</a></td>
             </tr>
             <tr>
-                <td><img src="batteries.jpg" height='200px' width='200px' /></td>
-                <td><img src="batterychargers.jpg" height='200px' width='200px' /></td>
+                <td><img src="/images/batteries.jpg" height='200px' width='200px' /></td>
+                <td><img src="/images/batterychargers.jpg" height='200px' width='200px' /></td>
             </tr>
             <tr>
                 <td><a runat="server" href="~/batteryTerminals.aspx">Battery Terminals</a></td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td><img src="batteryterminal.jpg" height='200px' width='200px' /></td>
+                <td><img src="/images/batteryterminal.jpg" height='200px' width='200px' /></td>
                 <td>&nbsp;</td>
             </tr>
         </table>

@@ -11,16 +11,16 @@
                 <td><a runat="server" href="~/cylinderHeads.aspx">Cylinder Heads</a></td>
             </tr>
             <tr>
-                <td><img src="mounts.jpg" height='200px' width='200px' /></td>
-                <td><img src="cylinderheads.jpg" height='200px' width='200px' /></td>
+                <td><img src="/images/mounts.jpg" height='200px' width='200px' /></td>
+                <td><img src="/images/cylinderheads.jpg" height='200px' width='200px' /></td>
             </tr>
             <tr>
                 <td><a runat="server" href="~/camshaftsCranks.aspx">Camshafts & Cranks</a></td>
                 <td><a runat="server" href="~/timingParts.aspx">Timing Parts</a></td>
             </tr>
             <tr>
-                <td><img src="camshaft.jpg" height='200px' width='200px' /></td>
-                <td><img src="distributor.jpg" height='200px' width='200px' /></td>
+                <td><img src="/images/camshaft.jpg" height='200px' width='200px' /></td>
+                <td><img src="/images/distributor.jpg" height='200px' width='200px' /></td>
             </tr>
         </table>
     </div>

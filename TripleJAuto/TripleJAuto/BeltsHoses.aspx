@@ -12,8 +12,8 @@
                 <td><a runat="server" href="~/hoses.aspx">Hoses</a></td>
             </tr>
             <tr>
-                <td><img src="belts.jpg" height='200px' width='200px' /></td>
-                <td><img src="hoses.jpg" height='200px' width='200px' /></td>
+                <td><img src="/images/belts.jpg" height='200px' width='200px' /></td>
+                <td><img src="/images/hoses.jpg" height='200px' width='200px' /></td>
             </tr>
             <tr>
                 <td></td>

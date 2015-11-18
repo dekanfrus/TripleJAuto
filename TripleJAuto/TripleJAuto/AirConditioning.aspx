@@ -12,16 +12,16 @@
                 <td><a runat="server" href="~/ac_clutch.aspx">A/C Clutch</a></td>
             </tr>
             <tr>
-                <td><img src="ac_compressor.jpg" height='200px' width='200px' /></td>
-                <td><img src="ac_clutch.jpg" height='200px' width='200px' /></td>
+                <td><img src="/images/ac_compressor.jpg" height='200px' width='200px' /></td>
+                <td><img src="/images/ac_clutch.jpg" height='200px' width='200px' /></td>
             </tr>
             <tr>
                 <td><a runat="server" href="~/ac_expansion.aspx">A/C Expansion</a></td>
                 <td><a runat="server" href="~/ac_blower.aspx">A/C Blower Motor</a></td>
             </tr>
             <tr>
-                <td><img src="ac_expansion.jpg" height='200px' width='200px' /></td>
-                <td><img src="blower_motor.jpg" height='200px' width='200px' /></td>
+                <td><img src="/images/ac_expansion.jpg" height='200px' width='200px' /></td>
+                <td><img src="/images/blower_motor.jpg" height='200px' width='200px' /></td>
             </tr>
         </table>
     </div>

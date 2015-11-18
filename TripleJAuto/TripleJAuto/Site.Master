@@ -15,39 +15,57 @@
 </head>
 <body>
     <form runat="server">
-        <div class="header">
-            <img src="Logo.png"  height="200px" width="350px" />
-        </div>
-
-        <div class="navigation">
-            <ul>
-                <li><a runat="server" href="~/Home.aspx">Home</a></li>
-                <li><a runat="server" href="~/AirConditioning.aspx">Air Conditioning</a></li>
-                <li><a runat="server" href="~/BatteryAccessories.aspx">Battery & Accessories</a></li>
-                <li><a runat="server" href="~/BeltsHoses.aspx">Belts & Hoses</a></li>
-                <li><a runat="server" href="~/BodyTrim.aspx">Body & Trim</a></li>
-                <li><a runat="server" href="~/Brakes.aspx">Brakes</a></li>
-                <li><a runat="server" href="~/engineParts.aspx">Engine Parts & Mounts</a></li>
-                <li><a runat="server" href="~/exhaust.aspx">Exhuast</a></li>
-                <li><a runat="server" href="~/Parts">Filters</a></li>
-                <li><a runat="server" href="~/Parts">Fuel & Emissions</a></li>
-                <li><a runat="server" href="~/Parts">Ignition & Tune-Up</a></li>
-                <li><a runat="server" href="~/Parts">Suspension & Steering</a></li>
-                <li><a runat="server" href="~/Parts">Tire & Wheel</a></li>
-                <li><a runat="server" href="~/Parts">Transmission</a></li>
-            </ul>
-        </div>
-
-        <div class="body-content">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
-
-        <div class="footer">
-            <a runat="server" href="~/About.aspx">About Us</a>
-            <a runat="server" href="~/Contact.aspx">Contact Us</a>
-        </div>
-
+        <table class="table-header">
+            <tr>
+                <td>
+                    <div class="header">
+                        <img src="/images/Logo.png" height="150px" width="250px" />
+                    </div>
+                </td>
+                <td>
+                    <div class="header-content">
+                        <asp:TextBox ID="TextBox3" runat="server" placeholder="User Name"></asp:TextBox>
+                        <asp:TextBox ID="TextBox4" runat="server" TextMode="Password" placeholder="Password"></asp:TextBox>
+                        <a runat="server" href="~/Home.aspx.cs">Login</a>
+                        <a runat="server" href="~/Home.aspx.cs">Signup</a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <table class="nav">
+            <tr>
+                <td>
+                    <div class="navigation">
+                        <ul>
+                            <li><a runat="server" href="~/Home.aspx">Home</a></li>
+                            <li><a runat="server" href="~/AirConditioning.aspx">Air Conditioning</a></li>
+                            <li><a runat="server" href="~/BatteryAccessories.aspx">Battery & Accessories</a></li>
+                            <li><a runat="server" href="~/BeltsHoses.aspx">Belts & Hoses</a></li>
+                            <li><a runat="server" href="~/BodyTrim.aspx">Body & Trim</a></li>
+                            <li><a runat="server" href="~/Brakes.aspx">Brakes</a></li>
+                            <li><a runat="server" href="~/engineParts.aspx">Engine Parts & Mounts</a></li>
+                            <li><a runat="server" href="~/exhaust.aspx">Exhaust</a></li>
+                        </ul>
+                    </div>
+                </td>
+                <td>
+                    <div class="body-content">
+                        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <table class="table-footer">
+            <tr>
+                <td>
+                    <div class="footer">
+                        <a runat="server" href="~/About.aspx">About Us</a>
+                        <a runat="server" href="~/Contact.aspx">Contact Us</a>
+                    </div>
+                </td>
+            </tr>
+        </table>
     </form>
 </body>
 </html>
