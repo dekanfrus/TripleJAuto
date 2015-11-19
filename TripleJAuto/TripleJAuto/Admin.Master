@@ -6,13 +6,13 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <title><%: Page.Title %>- My ASP.NET Application</title>
 
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
     <link href="Content/Site.css" rel="stylesheet" />
 
-</head>
+    </head>
 <body>
     <form runat="server">
         <table class="table-header">
@@ -24,15 +24,14 @@
                 </td>
                 <td>
                     <div class="header-content">
-                        <asp:TextBox ID="TextBox3" runat="server" placeholder="User Name"></asp:TextBox>
-                        <asp:TextBox ID="TextBox4" runat="server" TextMode="Password" placeholder="Password"></asp:TextBox>
-                        <a runat="server" href="~/Home.aspx.cs">Login</a>
-                        <a runat="server" href="~/Home.aspx.cs">Signup</a>
-                    </div>
+
+                    &nbsp;</div>
                 </td>
             </tr>
         </table>
             <div class="body-content" style="width: auto; margin: 0 auto">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
                 <asp:ContentPlaceHolder ID="MainContent" runat="server">
                 </asp:ContentPlaceHolder>
             </div>
@@ -43,7 +42,7 @@
                     <div class="footer">
                         <a runat="server" href="~/About.aspx">About Us</a>
                         <a runat="server" href="~/Contact.aspx">Contact Us</a>
-                    </div>
+                        </div>
                 </td>
             </tr>
         </table>

@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="User_Administration.aspx.cs" Inherits="TripleJAuto.WebForm1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-        <style type="text/css">
+    <style type="text/css">
     .auto-style2 {
         width: 170px;
                 height: 30px;
@@ -14,7 +14,16 @@
             .auto-style16 {
                 width: 102px;
                 height: 30px;
-            }
+        }
+        .auto-style17 {
+            text-align: right;
+        }
+        .auto-style18 {
+            color: #FF0000;
+        }
+        .auto-style19 {
+            color: #000000;
+        }
     </style>
     <div id="commandbar" style="background-color: silver">
             <table class="auto-style3" __designer:mapid="43f">
@@ -25,7 +34,7 @@
                     <td class="auto-style16" __designer:mapid="443">
                         &nbsp;</td>
                     <td class="auto-style2" __designer:mapid="445">
-                        </td>
+                        &nbsp;</td>
                 </tr>
             </table>
     </div>
@@ -99,6 +108,7 @@
                 </UpdateParameters>
             </asp:SqlDataSource>
             <div class="auto-style15">
+                <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:WebsiteConnectionString %>" SelectCommand="SELECT [UserUsername], [UserPassword], [UserFName], [UserLName], [UserAdmin] FROM [User]"></asp:SqlDataSource>
                 <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataKeyNames="UserID" DataSourceID="SqlDataSource1" ForeColor="Black" GridLines="Vertical">
                     <AlternatingRowStyle BackColor="White" />
                     <Columns>
@@ -153,6 +163,21 @@
         </asp:View>
     </asp:MultiView>
 </asp:Content>
+
+<asp:Content ID="Content2" runat="server" contentplaceholderid="ContentPlaceHolder1">
+    <div id="UserDetail" style="width: auto; margin: 0 auto; float: left">
+        <asp:Label ID="lblUserLogged" runat="server" CssClass="auto-style19"></asp:Label>
+    </div>
+
+    <div id="LoginArea" style="width: auto; margin: 0 auto" class="auto-style17">
+    <asp:Label ID="lblCheckUser" runat="server" CssClass="auto-style18"></asp:Label>
+        <asp:TextBox ID="txtUsername" placeholder="User Name" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtPassword" placeholder="Password" runat="server" TextMode="Password"></asp:TextBox>
+    <asp:Button ID="btnLogin" runat="server" Text="Login" Width="61px" OnClick="btnAdminLogin_Click" />
+    </div>
+
+</asp:Content>
+
 
 
 
