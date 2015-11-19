@@ -25,7 +25,7 @@ namespace TripleJAuto
         {
             if (GridView1.SelectedRow == null)
             {
-                DetailsView1.Visible = true;
+                DetailsView1.Visible = false;
             }
             else DetailsView1.Visible = true;
         }
