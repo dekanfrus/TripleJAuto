@@ -36,6 +36,8 @@ namespace TripleJAuto
             {
                 lblUserLogged.Text = "User logged out";
                 btnLogin.Text = "Login";
+                txtPassword.Visible = true;
+                txtUsername.Visible = true;
                 Session.Remove("loginUsername");
                 Session.Remove("loginPassword");
                 Session.Remove("loginUserFName");
@@ -134,20 +136,15 @@ namespace TripleJAuto
             SqlCommand cmd = new SqlCommand(adminExist, db);
 
             int checkAdminExists = Convert.ToInt32(cmd.ExecuteScalar().ToString());
+            db.Close();
 
-            if (checkAdminExists == 1)
-            {
-                db.Close();
-                adminExists = true;
-                return adminExists;
-            }
-            else
-            {
-                db.Close();
-                adminExists = false;
-                return adminExists;
-            }
-        }
+            if (checkAdminExists == 1) { adminExists = true; }
+
+            else adminExists = false;
+
+            return adminExists;
+                
+        } 
     
         protected void btnViewUsers_Click(object sender, EventArgs e)
         {
