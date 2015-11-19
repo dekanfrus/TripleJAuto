@@ -15,7 +15,7 @@
                 width: 102px;
                 height: 30px;
             }
-        </style>
+    </style>
     <div id="commandbar" style="background-color: silver">
             <table class="auto-style3" __designer:mapid="43f">
                 <tr __designer:mapid="440">
@@ -153,5 +153,7 @@
         </asp:View>
     </asp:MultiView>
 </asp:Content>
+
+
 
 
