@@ -24,6 +24,10 @@
         .auto-style19 {
             color: #000000;
         }
+        .auto-style20 {
+            width: 106px;
+            height: 30px;
+        }
     </style>
     <div id="commandbar" style="background-color: silver">
             <table class="auto-style3" __designer:mapid="43f">
@@ -31,7 +35,7 @@
                     <td class="auto-style16" __designer:mapid="441">
                         <asp:Button ID="btnViewUsers" runat="server" OnClick="btnViewUsers_Click" Text="View Users" Width="102px" />
                     </td>
-                    <td class="auto-style16" __designer:mapid="443">
+                    <td class="auto-style20" __designer:mapid="443">
                         &nbsp;</td>
                     <td class="auto-style2" __designer:mapid="445">
                         &nbsp;</td>
@@ -72,7 +76,7 @@
                     <asp:Parameter Name="UserID" Type="Int32" />
                 </UpdateParameters>
             </asp:SqlDataSource>
-            <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:WebsiteConnectionString %>" SelectCommand="SELECT * FROM [User] WHERE ([UserID] = @UserID)" DeleteCommand="DELETE FROM [User] WHERE [UserID] = @UserID" InsertCommand="INSERT INTO [User] ([UserUsername], [UserPassword], [UserEmail], [UserFName], [UserLName], [UserStreet], [UserCity], [UserZip], [UserCountry], [UserPhone], [UserAdmin]) VALUES (@UserUsername, @UserPassword, @UserEmail, @UserFName, @UserLName, @UserStreet, @UserCity, @UserZip, @UserCountry, @UserPhone, @UserAdmin)" UpdateCommand="UPDATE [User] SET [UserUsername] = @UserUsername, [UserPassword] = @UserPassword, [UserEmail] = @UserEmail, [UserFName] = @UserFName, [UserLName] = @UserLName, [UserStreet] = @UserStreet, [UserCity] = @UserCity, [UserZip] = @UserZip, [UserCountry] = @UserCountry, [UserPhone] = @UserPhone, [UserAdmin] = @UserAdmin WHERE [UserID] = @UserID">
+            <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:WebsiteConnectionString %>" DeleteCommand="DELETE FROM [User] WHERE [UserID] = @UserID" InsertCommand="INSERT INTO [User] ([UserUsername], [UserPassword], [UserEmail], [UserFName], [UserLName], [UserStreet], [UserCity], [UserZip], [UserCountry], [UserPhone], [UserAdmin]) VALUES (@UserUsername, @UserPassword, @UserEmail, @UserFName, @UserLName, @UserStreet, @UserCity, @UserZip, @UserCountry, @UserPhone, @UserAdmin)" SelectCommand="SELECT * FROM [User] WHERE ([UserID] = @UserID)" UpdateCommand="UPDATE [User] SET [UserUsername] = @UserUsername, [UserPassword] = @UserPassword, [UserEmail] = @UserEmail, [UserFName] = @UserFName, [UserLName] = @UserLName, [UserStreet] = @UserStreet, [UserCity] = @UserCity, [UserZip] = @UserZip, [UserCountry] = @UserCountry, [UserPhone] = @UserPhone, [UserAdmin] = @UserAdmin WHERE [UserID] = @UserID">
                 <DeleteParameters>
                     <asp:Parameter Name="UserID" Type="Int32" />
                 </DeleteParameters>
@@ -113,7 +117,7 @@
                     <AlternatingRowStyle BackColor="White" />
                     <Columns>
                         <asp:CommandField ShowDeleteButton="True" ShowSelectButton="True" />
-                         <asp:BoundField DataField="UserID" HeaderText="UserID" InsertVisible="False" ReadOnly="True" SortExpression="UserID" />
+                        <asp:BoundField DataField="UserID" HeaderText="UserID" InsertVisible="False" ReadOnly="True" SortExpression="UserID" />
                         <asp:BoundField DataField="UserUsername" HeaderText="UserUsername" SortExpression="UserUsername" />
                         <asp:BoundField DataField="UserEmail" HeaderText="UserEmail" SortExpression="UserEmail" />
                         <asp:BoundField DataField="UserFName" HeaderText="UserFName" SortExpression="UserFName" />

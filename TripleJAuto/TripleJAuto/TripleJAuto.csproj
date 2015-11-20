@@ -195,6 +195,8 @@
     <Content Include="muffler.aspx" />
     <Content Include="tips.aspx" />
     <Content Include="Admin.Master" />
+    <Content Include="Admin_parts.aspx" />
+    <Content Include="Admin_parts_add.aspx" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -488,6 +490,20 @@
     </Compile>
     <Compile Include="User_Administration.aspx.designer.cs">
       <DependentUpon>User_Administration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_parts.aspx.cs">
+      <DependentUpon>Admin_parts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_parts.aspx.designer.cs">
+      <DependentUpon>Admin_parts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_parts_add.aspx.cs">
+      <DependentUpon>Admin_parts_add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_parts_add.aspx.designer.cs">
+      <DependentUpon>Admin_parts_add.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

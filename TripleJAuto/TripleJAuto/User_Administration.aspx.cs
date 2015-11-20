@@ -148,7 +148,8 @@ namespace TripleJAuto
     
         protected void btnViewUsers_Click(object sender, EventArgs e)
         {
-            if (btnLogin.Text == "Login" || lblUserLogged.Text == "User logged out")
+            //if (btnLogin.Text == "Login" || lblUserLogged.Text == "User logged out")
+            if(adminStatus() == false)
             {
                 MultiView1.Visible = false;
                 lblUserLogged.Text = "You must be logged in as an administrator to view data";                
@@ -177,6 +178,21 @@ namespace TripleJAuto
         {
             GridView1.DataBind();
             GridView1.SelectRow(-1);
+        }
+
+        protected bool adminStatus()
+        {
+            bool adminLoggedIn = false;
+
+            if (btnLogin.Text == "Login" || lblUserLogged.Text == "User logged out")
+            {
+                adminLoggedIn = false;
+                //MultiView1.Visible = false;
+                //lblUserLogged.Text = "You must be logged in as an administrator to view data";
+            }
+            else adminLoggedIn = true;
+
+            return adminLoggedIn;
         }
     }
 }

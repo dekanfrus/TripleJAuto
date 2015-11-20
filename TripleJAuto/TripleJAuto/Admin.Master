@@ -29,6 +29,28 @@
                 </td>
             </tr>
         </table>
+            
+        <div id="navbar" style="width: auto; height: 25px; border: solid; background-color: silver; border-color: red">
+            <asp:Menu ID="NavMenu" runat="server" BackColor="#B5C7DE" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="Medium" ForeColor="#284E98" Orientation="Horizontal" StaticSubMenuIndent="10px">
+                <DynamicHoverStyle BackColor="#284E98" ForeColor="White" />
+                <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <DynamicMenuStyle BackColor="#B5C7DE" />
+                <DynamicSelectedStyle BackColor="#507CD1" />
+                <Items>
+                    <asp:MenuItem NavigateUrl="~/User_Administration.aspx" Text="Users" Value="Users">
+                        <asp:MenuItem Text="User Orders" Value="User Orders"></asp:MenuItem>
+                        <asp:MenuItem Text="Wishlists" Value="Wishlists"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Admin_parts.aspx" Text="Parts" Value="Parts">
+                        <asp:MenuItem Text="Reviews" Value="Reviews"></asp:MenuItem>
+                    </asp:MenuItem>
+                </Items>
+                <StaticHoverStyle BackColor="#284E98" ForeColor="White" />
+                <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <StaticSelectedStyle BackColor="#507CD1" />
+            </asp:Menu>
+        </div>
+
             <div class="body-content" style="width: auto; margin: 0 auto">
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>
