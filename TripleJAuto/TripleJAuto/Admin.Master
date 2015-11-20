@@ -30,7 +30,7 @@
             </tr>
         </table>
             
-        <div id="navbar" style="width: auto; height: 25px; border: solid; background-color: silver; border-color: red">
+        <div id="navbar" style="width: auto; height: 25px; border: none; background-color: silver">
             <asp:Menu ID="NavMenu" runat="server" BackColor="#B5C7DE" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="Medium" ForeColor="#284E98" Orientation="Horizontal" StaticSubMenuIndent="10px">
                 <DynamicHoverStyle BackColor="#284E98" ForeColor="White" />
                 <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
@@ -38,7 +38,7 @@
                 <DynamicSelectedStyle BackColor="#507CD1" />
                 <Items>
                     <asp:MenuItem NavigateUrl="~/User_Administration.aspx" Text="Users" Value="Users">
-                        <asp:MenuItem Text="User Orders" Value="User Orders"></asp:MenuItem>
+                        <asp:MenuItem Text="User Orders" Value="User Orders" NavigateUrl="~/AdminUserOrders.aspx"></asp:MenuItem>
                         <asp:MenuItem Text="Wishlists" Value="Wishlists"></asp:MenuItem>
                         <asp:MenuItem NavigateUrl="~/AdminPartsReviews.aspx" Text="Reviews" Value="Reviews"></asp:MenuItem>
                     </asp:MenuItem>

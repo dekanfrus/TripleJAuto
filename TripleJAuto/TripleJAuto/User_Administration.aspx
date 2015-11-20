@@ -154,13 +154,13 @@
                             <EditItemTemplate>
                                 <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("UserUsername") %>'></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="rfvEditUsername" runat="server" ErrorMessage="Username is required"
-                                    ControlToValidate="TextBox1" ForeColor="Red">
+                                    ControlToValidate="TextBox1" Text="*" ForeColor="Red">
                                 </asp:RequiredFieldValidator>
                             </EditItemTemplate>
                             <InsertItemTemplate>
                                 <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("UserUsername") %>'></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="rfInsertUsername" runat="server" ErrorMessage="Username is required"
-                                    ControlToValidate="TextBox1" ForeColor="Red">
+                                    ControlToValidate="TextBox1" Text="*" ForeColor="Red">
                                 </asp:RequiredFieldValidator>
                             </InsertItemTemplate>
                             <ItemTemplate>
@@ -171,13 +171,13 @@
                             <EditItemTemplate>
                                 <asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("UserPassword") %>'></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="rfvEditPassword" runat="server" ErrorMessage="Password is required"
-                                    ControlToValidate="TextBox2" ForeColor="Red">
+                                    ControlToValidate="TextBox2" Text="*" ForeColor="Red">
                                 </asp:RequiredFieldValidator>
                             </EditItemTemplate>
                             <InsertItemTemplate>
                                 <asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("UserPassword") %>'></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="rfvInsertPassword" runat="server" ErrorMessage="Password is required"
-                                    ControlToValidate="TextBox2" ForeColor="Red">
+                                    ControlToValidate="TextBox2" Text="*" ForeColor="Red">
                                 </asp:RequiredFieldValidator>
                             </InsertItemTemplate>
                             <ItemTemplate>
@@ -188,13 +188,13 @@
                             <EditItemTemplate>
                                 <asp:TextBox ID="TextBox3" runat="server" Text='<%# Bind("UserEmail") %>'></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="rfvEditUserEmail" runat="server" ErrorMessage="Email is required"
-                                    ControlToValidate="TextBox3" ForeColor="Red">
+                                    ControlToValidate="TextBox3" Text="*" ForeColor="Red">
                                 </asp:RequiredFieldValidator>
                             </EditItemTemplate>
                             <InsertItemTemplate>
                                 <asp:TextBox ID="TextBox3" runat="server" Text='<%# Bind("UserEmail") %>'></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="rfvInsertEmail" runat="server" ErrorMessage="Email is required"
-                                    ControlToValidate="TextBox3" ForeColor="Red">
+                                    ControlToValidate="TextBox3" Text="*" ForeColor="Red">
                                 </asp:RequiredFieldValidator>
                             </InsertItemTemplate>
                             <ItemTemplate>
@@ -205,13 +205,13 @@
                             <EditItemTemplate>
                                 <asp:TextBox ID="TextBox4" runat="server" Text='<%# Bind("UserFName") %>'></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="rfvEditFName" runat="server" ErrorMessage="First Name is required"
-                                    ControlToValidate="TextBox4" ForeColor="Red">
+                                    ControlToValidate="TextBox4" Text="*" ForeColor="Red">
                                 </asp:RequiredFieldValidator>
                             </EditItemTemplate>
                             <InsertItemTemplate>
                                 <asp:TextBox ID="TextBox4" runat="server" Text='<%# Bind("UserFName") %>'></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="rfvInsertFName" runat="server" ErrorMessage="First Name is required"
-                                    ControlToValidate="TextBox4" ForeColor="Red">
+                                    ControlToValidate="TextBox4" Text="*" ForeColor="Red">
                                 </asp:RequiredFieldValidator>
                             </InsertItemTemplate>
                             <ItemTemplate>
@@ -222,13 +222,13 @@
                             <EditItemTemplate>
                                 <asp:TextBox ID="TextBox5" runat="server" Text='<%# Bind("UserLName") %>'></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="rfvEditLName" runat="server" ErrorMessage="Last Name is required"
-                                    ControlToValidate="TextBox5" ForeColor="Red">
+                                    ControlToValidate="TextBox5" Text="*" ForeColor="Red">
                                 </asp:RequiredFieldValidator>
                             </EditItemTemplate>
                             <InsertItemTemplate>
                                 <asp:TextBox ID="TextBox5" runat="server" Text='<%# Bind("UserLName") %>'></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="rfvInsertLName" runat="server" ErrorMessage="Last Name is required"
-                                    ControlToValidate="TextBox5" ForeColor="Red">
+                                    ControlToValidate="TextBox5" Text="*" ForeColor="Red">
                                 </asp:RequiredFieldValidator>
                             </InsertItemTemplate>
                             <ItemTemplate>
@@ -239,13 +239,13 @@
                             <EditItemTemplate>
                                 <asp:TextBox ID="TextBox6" runat="server" Text='<%# Bind("UserStreet") %>'></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="rfvEditStreet" runat="server" ErrorMessage="Street is required"
-                                    ControlToValidate="TextBox6" ForeColor="Red">
+                                    ControlToValidate="TextBox6" Text="*" ForeColor="Red">
                                 </asp:RequiredFieldValidator>
                             </EditItemTemplate>
                             <InsertItemTemplate>
                                 <asp:TextBox ID="TextBox6" runat="server" Text='<%# Bind("UserStreet") %>'></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="rfvInsertStreet" runat="server" ErrorMessage="Street is required"
-                                    ControlToValidate="TextBox6" ForeColor="Red">
+                                    ControlToValidate="TextBox6" Text="*" ForeColor="Red">
                                 </asp:RequiredFieldValidator>
                             </InsertItemTemplate>
                             <ItemTemplate>
@@ -256,13 +256,13 @@
                             <EditItemTemplate>
                                 <asp:TextBox ID="TextBox7" runat="server" Text='<%# Bind("UserCity") %>'></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="rfvEditCity" runat="server" ErrorMessage="City is required"
-                                    ControlToValidate="TextBox7" ForeColor="Red">
+                                    ControlToValidate="TextBox7" Text="*" ForeColor="Red">
                                 </asp:RequiredFieldValidator>
                             </EditItemTemplate>
                             <InsertItemTemplate>
                                 <asp:TextBox ID="TextBox7" runat="server" Text='<%# Bind("UserCity") %>'></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="rfInsertCity" runat="server" ErrorMessage="City is required"
-                                    ControlToValidate="TextBox7" ForeColor="Red">
+                                    ControlToValidate="TextBox7" Text="*" ForeColor="Red">
                                 </asp:RequiredFieldValidator>
                             </InsertItemTemplate>
                             <ItemTemplate>
@@ -273,13 +273,13 @@
                             <EditItemTemplate>
                                 <asp:TextBox ID="TextBox8" runat="server" Text='<%# Bind("UserZip") %>'></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="rfvEditZip" runat="server" ErrorMessage="Zip code is required"
-                                    ControlToValidate="TextBox8" ForeColor="Red">
+                                    ControlToValidate="TextBox8" Text="*" ForeColor="Red">
                                 </asp:RequiredFieldValidator>
                             </EditItemTemplate>
                             <InsertItemTemplate>
                                 <asp:TextBox ID="TextBox8" runat="server" Text='<%# Bind("UserZip") %>'></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="rfvInsertZip" runat="server" ErrorMessage="Zip code is required"
-                                    ControlToValidate="TextBox8" ForeColor="Red">
+                                    ControlToValidate="TextBox8" Text="*" ForeColor="Red">
                                 </asp:RequiredFieldValidator>
                             </InsertItemTemplate>
                             <ItemTemplate>
@@ -290,13 +290,13 @@
                             <EditItemTemplate>
                                 <asp:TextBox ID="TextBox9" runat="server" Text='<%# Bind("UserCountry") %>'></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="rfvEditCountry" runat="server" ErrorMessage="Country is required"
-                                    ControlToValidate="TextBox9" ForeColor="Red">
+                                    ControlToValidate="TextBox9" Text="*" ForeColor="Red">
                                 </asp:RequiredFieldValidator>
                             </EditItemTemplate>
                             <InsertItemTemplate>
                                 <asp:TextBox ID="TextBox9" runat="server" Text='<%# Bind("UserCountry") %>'></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="rfvInsertCountry" runat="server" ErrorMessage="Country is required"
-                                    ControlToValidate="TextBox9" ForeColor="Red">
+                                    ControlToValidate="TextBox9" Text="*" ForeColor="Red">
                                 </asp:RequiredFieldValidator>
                             </InsertItemTemplate>
                             <ItemTemplate>
@@ -307,13 +307,13 @@
                             <EditItemTemplate>
                                 <asp:TextBox ID="TextBox10" runat="server" Text='<%# Bind("UserPhone") %>'></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="rfvEditPhone" runat="server" ErrorMessage="Phone is required"
-                                    ControlToValidate="TextBox10" ForeColor="Red">
+                                    ControlToValidate="TextBox10" Text="*" ForeColor="Red">
                                 </asp:RequiredFieldValidator>
                             </EditItemTemplate>
                             <InsertItemTemplate>
                                 <asp:TextBox ID="TextBox10" runat="server" Text='<%# Bind("UserPhone") %>'></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="rfvInsertPhone" runat="server" ErrorMessage="Phone is required"
-                                    ControlToValidate="TextBox10" ForeColor="Red">
+                                    ControlToValidate="TextBox10" Text="*" ForeColor="Red">
                                 </asp:RequiredFieldValidator>
                             </InsertItemTemplate>
                             <ItemTemplate>

@@ -40,8 +40,8 @@
                     CategoryName:
                     <asp:TextBox ID="CategoryNameTextBox" runat="server" Text='<%# Bind("CategoryName") %>' />
                     <br />
-                    <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
-                    &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                    <asp:LinkButton ID="UpdateButton" ValidationGroup="Update" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
+                    &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="True" CommandName="Cancel" Text="Cancel" />
                 </EditItemTemplate>
                 <EditRowStyle BackColor="#999999" />
                 <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
@@ -60,9 +60,9 @@
                     CategoryName:
                     <asp:Label ID="CategoryNameLabel" runat="server" Text='<%# Bind("CategoryName") %>' />
                     <br />
-                    <asp:LinkButton ID="EditButton" runat="server" CausesValidation="False" CommandName="Edit" Text="Edit" />
+                    <asp:LinkButton ID="EditButton" runat="server" CausesValidation="True" CommandName="Edit" Text="Edit" />
                     &nbsp;<asp:LinkButton ID="DeleteButton" runat="server" CausesValidation="False" CommandName="Delete" Text="Delete" />
-                    &nbsp;<asp:LinkButton ID="NewButton" runat="server" CausesValidation="False" CommandName="New" Text="New" />
+                    &nbsp;<asp:LinkButton ID="NewButton" ValidationGroup="Insert" runat="server" CausesValidation="True" CommandName="New" Text="New" />
                 </ItemTemplate>
                 <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
                 <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
@@ -90,6 +90,7 @@
                     <asp:Parameter Name="PartID" Type="String" />
                 </UpdateParameters>
             </asp:SqlDataSource>
+
             <asp:FormView ID="FormViewAddParts" runat="server" AllowPaging="True" CellPadding="4" DataKeyNames="PartID" DataSourceID="SqlDataSource2" ForeColor="#333333">
                 <EditItemTemplate>
                     <table style="width:100%;">
