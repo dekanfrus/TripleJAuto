@@ -1,46 +1,52 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="User_Administration.aspx.cs" Inherits="TripleJAuto.WebForm1" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <style type="text/css">
-    .auto-style2 {
-        width: 170px;
-                height: 30px;
-            }
-    .auto-style3 {
-        width: 22%;
-    }
+        .auto-style2 {
+            width: 398px;
+            height: 30px;
+        }
+
+        .auto-style3 {
+            width: 49%;
+        }
+
         .auto-style15 {
             text-align: left;
         }
-            .auto-style16 {
-                width: 102px;
-                height: 30px;
+
+        .auto-style16 {
+            width: 74px;
+            height: 30px;
         }
+
         .auto-style17 {
             text-align: right;
         }
+
         .auto-style18 {
             color: #FF0000;
         }
+
         .auto-style19 {
             color: #000000;
         }
+
         .auto-style20 {
-            width: 106px;
+            width: 108px;
             height: 30px;
         }
     </style>
     <div id="commandbar" style="background-color: silver">
-            <table class="auto-style3" __designer:mapid="43f">
-                <tr __designer:mapid="440">
-                    <td class="auto-style16" __designer:mapid="441">
-                        <asp:Button ID="btnViewUsers" runat="server" OnClick="btnViewUsers_Click" Text="View Users" Width="102px" />
-                    </td>
-                    <td class="auto-style20" __designer:mapid="443">
-                        &nbsp;</td>
-                    <td class="auto-style2" __designer:mapid="445">
-                        &nbsp;</td>
-                </tr>
-            </table>
+        <table class="auto-style3" __designer:mapid="43f">
+            <tr __designer:mapid="440">
+                <td class="auto-style16" __designer:mapid="441">
+                    <asp:Button ID="btnViewUsers" runat="server" OnClick="btnViewUsers_Click" Text="View Users" Width="102px" />
+                </td>
+                <td class="auto-style20" __designer:mapid="443">&nbsp;</td>
+                <td class="auto-style2" __designer:mapid="445">&nbsp;</td>
+            </tr>
+        </table>
     </div>
     <asp:MultiView ID="MultiView1" runat="server">
         <asp:View ID="ViewUsers" runat="server">
@@ -140,20 +146,180 @@
                     <SortedDescendingHeaderStyle BackColor="#575357" />
                 </asp:GridView>
                 <br />
-                <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" CellSpacing="2" DataKeyNames="UserID" DataSourceID="SqlDataSource2" ForeColor="Black" Height="50px" OnItemDeleted="DetailsView1_ItemDeleted" OnItemInserted="DetailsView1_ItemInserted" OnItemUpdated="DetailsView1_ItemUpdated" Width="164px">
+                <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" CellSpacing="2" DataKeyNames="UserID" DataSourceID="SqlDataSource2" ForeColor="Black" Height="126px" OnItemDeleted="DetailsView1_ItemDeleted" OnItemInserted="DetailsView1_ItemInserted" OnItemUpdated="DetailsView1_ItemUpdated" Width="260px">
                     <EditRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
                     <Fields>
                         <asp:BoundField DataField="UserID" HeaderText="UserID" InsertVisible="False" ReadOnly="True" SortExpression="UserID" />
-                        <asp:BoundField DataField="UserUsername" HeaderText="UserUsername" SortExpression="UserUsername" />
-                        <asp:BoundField DataField="UserPassword" HeaderText="UserPassword" SortExpression="UserPassword" />
-                        <asp:BoundField DataField="UserEmail" HeaderText="UserEmail" SortExpression="UserEmail" />
-                        <asp:BoundField DataField="UserFName" HeaderText="UserFName" SortExpression="UserFName" />
-                        <asp:BoundField DataField="UserLName" HeaderText="UserLName" SortExpression="UserLName" />
-                        <asp:BoundField DataField="UserStreet" HeaderText="UserStreet" SortExpression="UserStreet" />
-                        <asp:BoundField DataField="UserCity" HeaderText="UserCity" SortExpression="UserCity" />
-                        <asp:BoundField DataField="UserZip" HeaderText="UserZip" SortExpression="UserZip" />
-                        <asp:BoundField DataField="UserCountry" HeaderText="UserCountry" SortExpression="UserCountry" />
-                        <asp:BoundField DataField="UserPhone" HeaderText="UserPhone" SortExpression="UserPhone" />
+                        <asp:TemplateField HeaderText="UserUsername" SortExpression="UserUsername">
+                            <EditItemTemplate>
+                                <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("UserUsername") %>'></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="rfvEditUsername" runat="server" ErrorMessage="Username is required"
+                                    ControlToValidate="TextBox1" ForeColor="Red">
+                                </asp:RequiredFieldValidator>
+                            </EditItemTemplate>
+                            <InsertItemTemplate>
+                                <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("UserUsername") %>'></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="rfInsertUsername" runat="server" ErrorMessage="Username is required"
+                                    ControlToValidate="TextBox1" ForeColor="Red">
+                                </asp:RequiredFieldValidator>
+                            </InsertItemTemplate>
+                            <ItemTemplate>
+                                <asp:Label ID="Label1" runat="server" Text='<%# Bind("UserUsername") %>'></asp:Label>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="UserPassword" SortExpression="UserPassword">
+                            <EditItemTemplate>
+                                <asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("UserPassword") %>'></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="rfvEditPassword" runat="server" ErrorMessage="Password is required"
+                                    ControlToValidate="TextBox2" ForeColor="Red">
+                                </asp:RequiredFieldValidator>
+                            </EditItemTemplate>
+                            <InsertItemTemplate>
+                                <asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("UserPassword") %>'></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="rfvInsertPassword" runat="server" ErrorMessage="Password is required"
+                                    ControlToValidate="TextBox2" ForeColor="Red">
+                                </asp:RequiredFieldValidator>
+                            </InsertItemTemplate>
+                            <ItemTemplate>
+                                <asp:Label ID="Label2" runat="server" Text='<%# Bind("UserPassword") %>'></asp:Label>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="UserEmail" SortExpression="UserEmail">
+                            <EditItemTemplate>
+                                <asp:TextBox ID="TextBox3" runat="server" Text='<%# Bind("UserEmail") %>'></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="rfvEditUserEmail" runat="server" ErrorMessage="Email is required"
+                                    ControlToValidate="TextBox3" ForeColor="Red">
+                                </asp:RequiredFieldValidator>
+                            </EditItemTemplate>
+                            <InsertItemTemplate>
+                                <asp:TextBox ID="TextBox3" runat="server" Text='<%# Bind("UserEmail") %>'></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="rfvInsertEmail" runat="server" ErrorMessage="Email is required"
+                                    ControlToValidate="TextBox3" ForeColor="Red">
+                                </asp:RequiredFieldValidator>
+                            </InsertItemTemplate>
+                            <ItemTemplate>
+                                <asp:Label ID="Label3" runat="server" Text='<%# Bind("UserEmail") %>'></asp:Label>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="UserFName" SortExpression="UserFName">
+                            <EditItemTemplate>
+                                <asp:TextBox ID="TextBox4" runat="server" Text='<%# Bind("UserFName") %>'></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="rfvEditFName" runat="server" ErrorMessage="First Name is required"
+                                    ControlToValidate="TextBox4" ForeColor="Red">
+                                </asp:RequiredFieldValidator>
+                            </EditItemTemplate>
+                            <InsertItemTemplate>
+                                <asp:TextBox ID="TextBox4" runat="server" Text='<%# Bind("UserFName") %>'></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="rfvInsertFName" runat="server" ErrorMessage="First Name is required"
+                                    ControlToValidate="TextBox4" ForeColor="Red">
+                                </asp:RequiredFieldValidator>
+                            </InsertItemTemplate>
+                            <ItemTemplate>
+                                <asp:Label ID="Label4" runat="server" Text='<%# Bind("UserFName") %>'></asp:Label>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="UserLName" SortExpression="UserLName">
+                            <EditItemTemplate>
+                                <asp:TextBox ID="TextBox5" runat="server" Text='<%# Bind("UserLName") %>'></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="rfvEditLName" runat="server" ErrorMessage="Last Name is required"
+                                    ControlToValidate="TextBox5" ForeColor="Red">
+                                </asp:RequiredFieldValidator>
+                            </EditItemTemplate>
+                            <InsertItemTemplate>
+                                <asp:TextBox ID="TextBox5" runat="server" Text='<%# Bind("UserLName") %>'></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="rfvInsertLName" runat="server" ErrorMessage="Last Name is required"
+                                    ControlToValidate="TextBox5" ForeColor="Red">
+                                </asp:RequiredFieldValidator>
+                            </InsertItemTemplate>
+                            <ItemTemplate>
+                                <asp:Label ID="Label5" runat="server" Text='<%# Bind("UserLName") %>'></asp:Label>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="UserStreet" SortExpression="UserStreet">
+                            <EditItemTemplate>
+                                <asp:TextBox ID="TextBox6" runat="server" Text='<%# Bind("UserStreet") %>'></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="rfvEditStreet" runat="server" ErrorMessage="Street is required"
+                                    ControlToValidate="TextBox6" ForeColor="Red">
+                                </asp:RequiredFieldValidator>
+                            </EditItemTemplate>
+                            <InsertItemTemplate>
+                                <asp:TextBox ID="TextBox6" runat="server" Text='<%# Bind("UserStreet") %>'></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="rfvInsertStreet" runat="server" ErrorMessage="Street is required"
+                                    ControlToValidate="TextBox6" ForeColor="Red">
+                                </asp:RequiredFieldValidator>
+                            </InsertItemTemplate>
+                            <ItemTemplate>
+                                <asp:Label ID="Label6" runat="server" Text='<%# Bind("UserStreet") %>'></asp:Label>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="UserCity" SortExpression="UserCity">
+                            <EditItemTemplate>
+                                <asp:TextBox ID="TextBox7" runat="server" Text='<%# Bind("UserCity") %>'></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="rfvEditCity" runat="server" ErrorMessage="City is required"
+                                    ControlToValidate="TextBox7" ForeColor="Red">
+                                </asp:RequiredFieldValidator>
+                            </EditItemTemplate>
+                            <InsertItemTemplate>
+                                <asp:TextBox ID="TextBox7" runat="server" Text='<%# Bind("UserCity") %>'></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="rfInsertCity" runat="server" ErrorMessage="City is required"
+                                    ControlToValidate="TextBox7" ForeColor="Red">
+                                </asp:RequiredFieldValidator>
+                            </InsertItemTemplate>
+                            <ItemTemplate>
+                                <asp:Label ID="Label7" runat="server" Text='<%# Bind("UserCity") %>'></asp:Label>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="UserZip" SortExpression="UserZip">
+                            <EditItemTemplate>
+                                <asp:TextBox ID="TextBox8" runat="server" Text='<%# Bind("UserZip") %>'></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="rfvEditZip" runat="server" ErrorMessage="Zip code is required"
+                                    ControlToValidate="TextBox8" ForeColor="Red">
+                                </asp:RequiredFieldValidator>
+                            </EditItemTemplate>
+                            <InsertItemTemplate>
+                                <asp:TextBox ID="TextBox8" runat="server" Text='<%# Bind("UserZip") %>'></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="rfvInsertZip" runat="server" ErrorMessage="Zip code is required"
+                                    ControlToValidate="TextBox8" ForeColor="Red">
+                                </asp:RequiredFieldValidator>
+                            </InsertItemTemplate>
+                            <ItemTemplate>
+                                <asp:Label ID="Label8" runat="server" Text='<%# Bind("UserZip") %>'></asp:Label>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="UserCountry" SortExpression="UserCountry">
+                            <EditItemTemplate>
+                                <asp:TextBox ID="TextBox9" runat="server" Text='<%# Bind("UserCountry") %>'></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="rfvEditCountry" runat="server" ErrorMessage="Country is required"
+                                    ControlToValidate="TextBox9" ForeColor="Red">
+                                </asp:RequiredFieldValidator>
+                            </EditItemTemplate>
+                            <InsertItemTemplate>
+                                <asp:TextBox ID="TextBox9" runat="server" Text='<%# Bind("UserCountry") %>'></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="rfvInsertCountry" runat="server" ErrorMessage="Country is required"
+                                    ControlToValidate="TextBox9" ForeColor="Red">
+                                </asp:RequiredFieldValidator>
+                            </InsertItemTemplate>
+                            <ItemTemplate>
+                                <asp:Label ID="Label9" runat="server" Text='<%# Bind("UserCountry") %>'></asp:Label>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="UserPhone" SortExpression="UserPhone">
+                            <EditItemTemplate>
+                                <asp:TextBox ID="TextBox10" runat="server" Text='<%# Bind("UserPhone") %>'></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="rfvEditPhone" runat="server" ErrorMessage="Phone is required"
+                                    ControlToValidate="TextBox10" ForeColor="Red">
+                                </asp:RequiredFieldValidator>
+                            </EditItemTemplate>
+                            <InsertItemTemplate>
+                                <asp:TextBox ID="TextBox10" runat="server" Text='<%# Bind("UserPhone") %>'></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="rfvInsertPhone" runat="server" ErrorMessage="Phone is required"
+                                    ControlToValidate="TextBox10" ForeColor="Red">
+                                </asp:RequiredFieldValidator>
+                            </InsertItemTemplate>
+                            <ItemTemplate>
+                                <asp:Label ID="Label10" runat="server" Text='<%# Bind("UserPhone") %>'></asp:Label>
+                            </ItemTemplate>
+                        </asp:TemplateField>
                         <asp:CheckBoxField DataField="UserAdmin" HeaderText="UserAdmin" SortExpression="UserAdmin" />
                         <asp:CommandField ShowEditButton="True" ShowInsertButton="True" />
                     </Fields>
@@ -162,22 +328,23 @@
                     <PagerStyle BackColor="#CCCCCC" ForeColor="Black" HorizontalAlign="Left" />
                     <RowStyle BackColor="White" />
                 </asp:DetailsView>
-                <br />
+                <asp:ValidationSummary ID="ValidationSummary1" ForeColor="Red" runat="server" Width="300px" />
+
             </div>
         </asp:View>
     </asp:MultiView>
 </asp:Content>
 
-<asp:Content ID="Content2" runat="server" contentplaceholderid="ContentPlaceHolder1">
+<asp:Content ID="Content2" runat="server" ContentPlaceHolderID="ContentPlaceHolder1">
     <div id="UserDetail" style="width: auto; margin: 0 auto; float: left">
         <asp:Label ID="lblUserLogged" runat="server" CssClass="auto-style19"></asp:Label>
     </div>
 
     <div id="LoginArea" style="width: auto; margin: 0 auto" class="auto-style17">
-    <asp:Label ID="lblCheckUser" runat="server" CssClass="auto-style18"></asp:Label>
+        <asp:Label ID="lblCheckUser" runat="server" CssClass="auto-style18"></asp:Label>
         <asp:TextBox ID="txtUsername" placeholder="User Name" runat="server"></asp:TextBox>
         <asp:TextBox ID="txtPassword" placeholder="Password" runat="server" TextMode="Password"></asp:TextBox>
-    <asp:Button ID="btnLogin" runat="server" Text="Login" Width="61px" OnClick="btnAdminLogin_Click" />
+        <asp:Button ID="btnLogin" runat="server" Text="Login" Width="61px" OnClick="btnAdminLogin_Click" />
     </div>
 
 </asp:Content>

@@ -195,8 +195,9 @@
     <Content Include="muffler.aspx" />
     <Content Include="tips.aspx" />
     <Content Include="Admin.Master" />
-    <Content Include="Admin_parts.aspx" />
-    <Content Include="Admin_parts_add.aspx" />
+    <Content Include="AdminParts.aspx" />
+    <Content Include="AdminPartsAdd.aspx" />
+    <Content Include="AdminPartsReviews.aspx" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -491,19 +492,26 @@
     <Compile Include="User_Administration.aspx.designer.cs">
       <DependentUpon>User_Administration.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin_parts.aspx.cs">
-      <DependentUpon>Admin_parts.aspx</DependentUpon>
+    <Compile Include="AdminParts.aspx.cs">
+      <DependentUpon>AdminParts.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin_parts.aspx.designer.cs">
-      <DependentUpon>Admin_parts.aspx</DependentUpon>
+    <Compile Include="AdminParts.aspx.designer.cs">
+      <DependentUpon>AdminParts.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin_parts_add.aspx.cs">
-      <DependentUpon>Admin_parts_add.aspx</DependentUpon>
+    <Compile Include="AdminPartsAdd.aspx.cs">
+      <DependentUpon>AdminPartsAdd.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin_parts_add.aspx.designer.cs">
-      <DependentUpon>Admin_parts_add.aspx</DependentUpon>
+    <Compile Include="AdminPartsAdd.aspx.designer.cs">
+      <DependentUpon>AdminPartsAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPartsReviews.aspx.cs">
+      <DependentUpon>AdminPartsReviews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPartsReviews.aspx.designer.cs">
+      <DependentUpon>AdminPartsReviews.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
