@@ -11,5 +11,8 @@
         <SortedDescendingCellStyle BackColor="#CAC9C9" />
         <SortedDescendingHeaderStyle BackColor="#00547E" />
     </asp:GridView>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:WebsiteConnectionString %>" SelectCommand="SELECT CategoryID, PartName, PartDesc FROM Part"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:WebsiteConnectionString %>" SelectCommand="SELECT Part.PartName, Part.PartCost, Part.PartDesc
+FROM Category INNER JOIN
+Part ON Category.CategoryID = Part.CategoryID
+WHERE (Category.CategoryName = 'Battery Chargers');"></asp:SqlDataSource>
 </asp:Content>
