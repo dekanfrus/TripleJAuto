@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="AdminParts.aspx.cs" Inherits="TripleJAuto.WebForm32" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <asp:Label ID="lblUserLogin" runat="server"></asp:Label>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:WebsiteConnectionString %>" DeleteCommand="DELETE FROM [Part] WHERE [PartID] = @PartID" InsertCommand="INSERT INTO [Part] ([PartID], [CategoryID], [PartName], [PartCount], [PartCost], [PartDesc]) VALUES (@PartID, @CategoryID, @PartName, @PartCount, @PartCost, @PartDesc)" SelectCommand="SELECT * FROM [Part]" UpdateCommand="UPDATE [Part] SET [CategoryID] = @CategoryID, [PartName] = @PartName, [PartCount] = @PartCount, [PartCost] = @PartCost, [PartDesc] = @PartDesc WHERE [PartID] = @PartID">

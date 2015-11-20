@@ -1,6 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="AdminPartsAdd.aspx.cs" Inherits="TripleJAuto.WebForm33" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+    <asp:Label ID="lblUserLogin" runat="server"></asp:Label>
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div id="buttonArea" style="width: auto; background-color: silver; margin: 0 auto">

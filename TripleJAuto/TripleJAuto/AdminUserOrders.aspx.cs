@@ -11,7 +11,20 @@ namespace TripleJAuto
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string loginUserFName = (string)Session["loginUserFName"];
+            string loginUserLName = (string)Session["loginUserLName"];
+            string loginUserAdmin = (string)Session["loginUserAdmin"];
 
+            if (loginUserAdmin != "Admin")
+            {
+                GridView1.Visible = false;
+                lblUserLogin.Text = "Admin not logged in";
+            }
+            else
+            {
+                lblUserLogin.Text = loginUserFName + " " + loginUserLName;
+                GridView1.Visible = true;
+            }
         }
     }
 }

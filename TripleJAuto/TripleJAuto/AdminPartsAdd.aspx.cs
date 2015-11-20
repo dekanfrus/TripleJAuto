@@ -11,7 +11,20 @@ namespace TripleJAuto
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //MultiView1.ActiveViewIndex = 0;
+            string loginUserFName = (string)Session["loginUserFName"];
+            string loginUserLName = (string)Session["loginUserLName"];
+            string loginUserAdmin = (string)Session["loginUserAdmin"];
+
+            if (loginUserAdmin != "Admin")
+            {
+                MultiView1.Visible = false;
+                lblUserLogin.Text = "Admin not logged in";
+            }
+            else
+            {
+                lblUserLogin.Text = loginUserFName + " " + loginUserLName;
+                MultiView1.Visible = true;
+            }
         }
 
         protected void btnAddCategory_Click(object sender, EventArgs e)

@@ -55,7 +55,7 @@ namespace TripleJAuto
                     if (checkAdmin() == true)
                     {
                         string adminName = txtUsername.Text;
-                        //string administrator = "Admin";
+                        string administrator = "Admin";
                         SqlConnection db = new SqlConnection(SqlDataSource3.ConnectionString);
 
                         //SELECT [UserUsername], [UserPassword], [UserFName], [UserLName] FROM [User]
@@ -78,7 +78,7 @@ namespace TripleJAuto
                         Session["loginPassword"] = txtPassword.Text;
                         Session["loginUserFName"] = adminFirstName;
                         Session["loginUserLName"] = adminLastName;
-                        //Session["loginUserAdmin"] = administrator;
+                        Session["loginUserAdmin"] = administrator;
                     
                         db.Close();
 

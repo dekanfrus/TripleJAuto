@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="AdminUserOrders.aspx.cs" Inherits="TripleJAuto.WebForm35" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <asp:Label ID="lblUserLogin" runat="server"></asp:Label>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:WebsiteConnectionString %>" DeleteCommand="DELETE FROM [Order] WHERE [OrderID] = @OrderID" InsertCommand="INSERT INTO [Order] ([OrderRecipient], [OrderAddress], [OrderCity], [OrderState], [OrderZip]) VALUES (@OrderRecipient, @OrderAddress, @OrderCity, @OrderState, @OrderZip)" SelectCommand="SELECT * FROM [Order]" UpdateCommand="UPDATE [Order] SET [OrderRecipient] = @OrderRecipient, [OrderAddress] = @OrderAddress, [OrderCity] = @OrderCity, [OrderState] = @OrderState, [OrderZip] = @OrderZip WHERE [OrderID] = @OrderID">

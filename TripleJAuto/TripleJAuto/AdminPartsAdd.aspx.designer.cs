@@ -13,6 +13,15 @@ namespace TripleJAuto {
     public partial class WebForm33 {
         
         /// <summary>
+        /// lblUserLogin control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblUserLogin;
+        
+        /// <summary>
         /// btnAddCategory control.
         /// </summary>
         /// <remarks>
