@@ -117,22 +117,22 @@
                     <AlternatingRowStyle BackColor="White" />
                     <Columns>
                         <asp:CommandField ShowDeleteButton="True" ShowSelectButton="True" />
-                        <asp:BoundField DataField="UserID" HeaderText="UserID" InsertVisible="False" ReadOnly="True" SortExpression="UserID" />
-                        <asp:BoundField DataField="UserUsername" HeaderText="UserUsername" SortExpression="UserUsername" />
-                        <asp:BoundField DataField="UserEmail" HeaderText="UserEmail" SortExpression="UserEmail" />
-                        <asp:BoundField DataField="UserFName" HeaderText="UserFName" SortExpression="UserFName" />
-                        <asp:BoundField DataField="UserLName" HeaderText="UserLName" SortExpression="UserLName" />
-                        <asp:BoundField DataField="UserStreet" HeaderText="UserStreet" SortExpression="UserStreet" />
-                        <asp:BoundField DataField="UserCity" HeaderText="UserCity" SortExpression="UserCity" />
-                        <asp:BoundField DataField="UserZip" HeaderText="UserZip" SortExpression="UserZip" />
-                        <asp:BoundField DataField="UserCountry" HeaderText="UserCountry" SortExpression="UserCountry" />
-                        <asp:BoundField DataField="UserPhone" HeaderText="UserPhone" SortExpression="UserPhone" />
-                        <asp:CheckBoxField DataField="UserAdmin" HeaderText="UserAdmin" SortExpression="UserAdmin" />
+                        <asp:BoundField DataField="UserID" HeaderText="ID" InsertVisible="False" ReadOnly="True" SortExpression="UserID" />
+                        <asp:BoundField DataField="UserUsername" HeaderText="Username" SortExpression="UserUsername" />
+                        <asp:BoundField DataField="UserEmail" HeaderText="Email" SortExpression="UserEmail" />
+                        <asp:BoundField DataField="UserFName" HeaderText="First Name" SortExpression="UserFName" />
+                        <asp:BoundField DataField="UserLName" HeaderText="Last Name" SortExpression="UserLName" />
+                        <asp:BoundField DataField="UserStreet" HeaderText="Street" SortExpression="UserStreet" />
+                        <asp:BoundField DataField="UserCity" HeaderText="City" SortExpression="UserCity" />
+                        <asp:BoundField DataField="UserZip" HeaderText="Zip" SortExpression="UserZip" />
+                        <asp:BoundField DataField="UserCountry" HeaderText="Country" SortExpression="UserCountry" />
+                        <asp:BoundField DataField="UserPhone" HeaderText="Phone" SortExpression="UserPhone" />
+                        <asp:CheckBoxField DataField="UserAdmin" HeaderText="Admin Status" SortExpression="UserAdmin" />
                     </Columns>
-                    <FooterStyle BackColor="#CCCC99" />
-                    <HeaderStyle BackColor="#6B696B" Font-Bold="True" ForeColor="White" />
+                    <FooterStyle BackColor="#717D8C" ForeColor="#7ac1ae"/>
+                    <HeaderStyle BackColor="#717D8C" Font-Bold="True" ForeColor="#7ac1ae" />
                     <PagerStyle BackColor="#F7F7DE" ForeColor="Black" HorizontalAlign="Right" />
-                    <RowStyle BackColor="#F7F7DE" />
+                    <RowStyle BackColor="#DDDDDD" />
                     <SelectedRowStyle BackColor="#CE5D5A" Font-Bold="True" ForeColor="White" />
                     <SortedAscendingCellStyle BackColor="#FBFBF2" />
                     <SortedAscendingHeaderStyle BackColor="#848384" />
@@ -159,7 +159,7 @@
                     </Fields>
                     <FooterStyle BackColor="#CCCCCC" />
                     <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
-                    <PagerStyle BackColor="#CCCCCC" ForeColor="Black" HorizontalAlign="Left" />
+                    <PagerStyle BackColor="#717D8C" ForeColor="#7ac1ae" HorizontalAlign="Left" />
                     <RowStyle BackColor="White" />
                 </asp:DetailsView>
                 <br />
