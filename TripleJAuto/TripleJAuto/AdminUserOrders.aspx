@@ -20,7 +20,7 @@
                 <td class="auto-style16" __designer:mapid="441">
                     <asp:Button ID="btnViewOrders" runat="server" OnClick="btnViewOrders_Click" Text="View Orders" Width="102px" />
                 </td>
-                <td class="auto-style20" __designer:mapid="443" style="width: 88px">&nbsp;</td>
+                <td class="auto-style20" __designer:mapid="443" style="width: 62px">&nbsp;</td>
                 <td __designer:mapid="5d3" style="width: 127px">
                 <asp:Label ID="lblSearchOrder" runat="server" Text="Search by OrderID"></asp:Label>
                 </td>
