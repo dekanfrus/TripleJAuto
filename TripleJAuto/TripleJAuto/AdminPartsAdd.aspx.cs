@@ -19,10 +19,12 @@ namespace TripleJAuto
             {
                 MultiView1.Visible = false;
                 lblUserLogin.Text = "Admin not logged in";
+                btnLogout.Text = "Login";
             }
             else
             {
                 lblUserLogin.Text = loginUserFName + " " + loginUserLName;
+                btnLogout.Text = "Logout";
                 MultiView1.Visible = true;
             }
         }
@@ -37,6 +39,26 @@ namespace TripleJAuto
         {
             MultiView1.ActiveViewIndex = 1;
             FormViewAddParts.ChangeMode(FormViewMode.Insert);
+        }
+
+        protected void btnAdminLogout_Click(object sender, EventArgs e)
+        {
+            //Logout admin user
+            if (lblUserLogin.Text == "Admin not logged in")
+            {
+                Response.Redirect("~/User_administration.aspx");
+            }
+            else
+            {
+                btnLogout.Text = "Logout";
+
+                Session.Remove("loginUserFName");
+                Session.Remove("loginUserLName");
+                Session.Remove("loginUserAdmin");
+                MultiView1.Visible = false;
+                Response.Redirect("~/Home.aspx");
+            }
+
         }
     }
 }

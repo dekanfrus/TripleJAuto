@@ -1,5 +1,15 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="AdminPartsReviews.aspx.cs" Inherits="TripleJAuto.WebForm34" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+    <div id="UserDetail" style="width: auto; margin: 0 auto; float: left">
+        <asp:Label ID="lblUserLogin" runat="server"></asp:Label>
+    </div>
+
+    <div id="LoginArea" style="width: auto; margin: 0 auto; text-align: right;" class="auto-style17">
+        <asp:Button ID="btnLogout" runat="server" Text="Logout" Width="61px" OnClick="btnAdminLogout_Click" />
+    </div>
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div id="partsReviews">

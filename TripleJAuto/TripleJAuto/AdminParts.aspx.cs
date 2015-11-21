@@ -19,11 +19,32 @@ namespace TripleJAuto
             {
                 GridView1.Visible = false;
                 lblUserLogin.Text = "Admin not logged in";
+                btnLogout.Text = "Login";
             }
             else
             {
                 lblUserLogin.Text = loginUserFName + " " + loginUserLName;
+                btnLogout.Text = "Logout";
                 GridView1.Visible = true;
+            }
+        }
+
+        protected void btnAdminLogout_Click(object sender, EventArgs e)
+        {
+            //Logout admin user
+            if (lblUserLogin.Text == "Admin not logged in")
+            {
+                Response.Redirect("~/User_administration.aspx");
+            }
+            else
+            {
+                btnLogout.Text = "Logout";
+
+                Session.Remove("loginUserFName");
+                Session.Remove("loginUserLName");
+                Session.Remove("loginUserAdmin");
+                GridView1.Visible = false;
+                Response.Redirect("~/Home.aspx");
             }
         }
     }

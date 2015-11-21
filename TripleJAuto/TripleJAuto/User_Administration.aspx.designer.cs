@@ -10,7 +10,7 @@
 namespace TripleJAuto {
     
     
-    public partial class WebForm1 {
+    public partial class UserAdmin {
         
         /// <summary>
         /// btnViewUsers control.
