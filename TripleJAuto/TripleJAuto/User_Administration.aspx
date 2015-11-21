@@ -2,41 +2,16 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <style type="text/css">
-        .auto-style2 {
-            width: 398px;
-            height: 30px;
-        }
-
-        .auto-style3 {
-            width: 49%;
-        }
-
+        
         .auto-style15 {
             text-align: left;
-        }
-
-        .auto-style16 {
-            width: 74px;
-            height: 30px;
         }
 
         .auto-style17 {
             text-align: right;
         }
 
-        .auto-style18 {
-            color: #FF0000;
-        }
-
-        .auto-style19 {
-            color: #000000;
-        }
-
-        .auto-style20 {
-            width: 108px;
-            height: 30px;
-        }
-    </style>
+        </style>
     <div id="commandbar" style="background-color: silver">
         <table class="auto-style3" __designer:mapid="43f">
             <tr __designer:mapid="440">
@@ -341,9 +316,6 @@
     </div>
 
     <div id="LoginArea" style="width: auto; margin: 0 auto" class="auto-style17">
-        <asp:Label ID="lblCheckUser" runat="server" CssClass="auto-style18"></asp:Label>
-        <asp:TextBox ID="txtUsername" placeholder="User Name" runat="server"></asp:TextBox>
-        <asp:TextBox ID="txtPassword" placeholder="Password" runat="server" TextMode="Password"></asp:TextBox>
         <asp:Button ID="btnLogin" runat="server" Text="Login" Width="61px" OnClick="btnAdminLogin_Click" />
     </div>
 

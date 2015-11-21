@@ -9,38 +9,11 @@ using System.Data.SqlClient;
 
 namespace TripleJAuto
 {
-    public partial class UserAdmin : System.Web.UI.Page
+    public partial class AdminLogin : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string loginUsername = (string)Session["LoginUsername"];
-            string loginUserFName = (string)Session["loginUserFName"];
-            string loginUserLName = (string)Session["loginUserLName"];
-            string loginUserAdmin = (string)Session["loginUserAdmin"];
-            string loginStatus = (string)Session["loginStatus"];
-
-            //lblCheckUser.Visible = false;           
-
-            if (loginStatus != "LoggedIn")
-            {
-                btnViewUsers.Visible = false;
-                lblUserLogged.Text = "This page requires Administrator privileges";
-            }
-            else if (loginStatus == "LoggedIn")
-            {
-                lblUserLogged.Text = loginUserFName + " " + loginUserLName;
-                btnViewUsers.Visible = true;
-                btnLogin.Text = "Logout";
-            }
-        }
-
-        protected void Page_Prerender(object sender, EventArgs e)
-        {
-            if (GridView1.SelectedRow == null)
-            {
-                DetailsView1.Visible = false;
-            }
-            else DetailsView1.Visible = true;
+            lblUserLogged.Text = "Restricted to Site Administrators, unauthorized use prohibited";
         }
 
         protected void btnAdminLogin_Click(object sender, EventArgs e)
@@ -49,25 +22,17 @@ namespace TripleJAuto
             {
                 lblUserLogged.Text = "User logged out";
                 btnLogin.Text = "Login";
-                //txtPassword.Visible = true;
-                //txtUsername.Visible = true;
+                txtPassword.Visible = true;
+                txtUsername.Visible = true;
                 Session.Remove("loginUsername");
                 Session.Remove("loginPassword");
                 Session.Remove("loginUserFName");
                 Session.Remove("loginUserLName");
                 Session["LoginStatus"] = "LoggedOut";
 
-                MultiView1.Visible = false;
-                btnViewUsers.Visible = false;
                 Response.Redirect("/Home.aspx");
             }
 
-            else
-            {
-                Response.Redirect("~/AdminLogin.aspx");
-            }
-        }//temporary closing bracket
-            /*
             else
             {
                 if (emptyFields() == true)
@@ -82,8 +47,8 @@ namespace TripleJAuto
                     {
                         string adminName = txtUsername.Text;
                         string administrator = "Admin";
-                        
-                        SqlConnection db = new SqlConnection(SqlDataSource3.ConnectionString);
+
+                        SqlConnection db = new SqlConnection(SqlDataSource1.ConnectionString);
 
                         //SELECT [UserUsername], [UserPassword], [UserFName], [UserLName] FROM [User]
 
@@ -108,16 +73,14 @@ namespace TripleJAuto
                         Session["loginUserAdmin"] = administrator;
                         Session["loginStatus"] = "LoggedIn";
 
-                    
                         db.Close();
 
-                        btnViewUsers.Visible = true;
+                        //btnViewUsers.Visible = true;
                         lblUserLogged.Text = adminFirstName + " " + adminLastName;
                         txtPassword.Visible = false;
                         txtUsername.Visible = false;
                         btnLogin.Text = "Logout";
-
-                        //Response.Redirect("/EnterPassword.aspx");
+                        Response.Redirect("~/User_Administration.aspx");
                     }
 
                     else
@@ -128,7 +91,7 @@ namespace TripleJAuto
                 }
             }
 
-            
+
         }
 
         protected bool emptyFields()
@@ -150,7 +113,7 @@ namespace TripleJAuto
             string adminTrue = "true";
             bool adminExists = false;
 
-            SqlConnection db = new SqlConnection(SqlDataSource3.ConnectionString);
+            SqlConnection db = new SqlConnection(SqlDataSource1.ConnectionString);
             db.Open();
 
             //SELECT[UserUsername], [UserPassword], [UserFName], [UserLName], [UserAdmin] FROM[User]
@@ -168,53 +131,8 @@ namespace TripleJAuto
             else adminExists = false;
 
             return adminExists;
-                
-        } 
-    */
-        protected void btnViewUsers_Click(object sender, EventArgs e)
-        {
-            if(adminStatus() == false)
-            {
-                MultiView1.Visible = false;
-                lblUserLogged.Text = "You must be logged in as an administrator to view data";                
-            }
-            else
-            {
-                MultiView1.Visible = true;
-                MultiView1.ActiveViewIndex = 0;              
-            }
-            
         }
 
-        protected void DetailsView1_ItemUpdated(object sender, DetailsViewUpdatedEventArgs e)
-        {
-            GridView1.DataBind();
-            GridView1.SelectRow(-1);
-        }
 
-        protected void DetailsView1_ItemDeleted(object sender, DetailsViewDeletedEventArgs e)
-        {
-            GridView1.DataBind();
-            GridView1.SelectRow(-1);
-        }
-
-        protected void DetailsView1_ItemInserted(object sender, DetailsViewInsertedEventArgs e)
-        {
-            GridView1.DataBind();
-            GridView1.SelectRow(-1);
-        }
-
-        protected bool adminStatus()
-        {
-            bool adminLoggedIn = false;
-
-            if (btnLogin.Text == "Login" || lblUserLogged.Text == "User logged out")
-            {
-                adminLoggedIn = false;
-            }
-            else adminLoggedIn = true;
-
-            return adminLoggedIn;
-        }
     }
 }

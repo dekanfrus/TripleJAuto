@@ -199,6 +199,7 @@
     <Content Include="AdminPartsAdd.aspx" />
     <Content Include="AdminPartsReviews.aspx" />
     <Content Include="AdminUserOrders.aspx" />
+    <Content Include="AdminLogin.aspx" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -520,6 +521,13 @@
     </Compile>
     <Compile Include="AdminUserOrders.aspx.designer.cs">
       <DependentUpon>AdminUserOrders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
