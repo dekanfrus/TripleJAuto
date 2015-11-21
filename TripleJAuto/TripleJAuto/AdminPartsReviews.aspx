@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="AdminPartsReviews.aspx.cs" Inherits="TripleJAuto.WebForm34" %>
+﻿<%@ Page Title="Reviews" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="AdminPartsReviews.aspx.cs" Inherits="TripleJAuto.WebForm34" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
@@ -6,7 +6,7 @@
         <asp:Label ID="lblUserLogin" runat="server"></asp:Label>
     </div>
 
-    <div id="LoginArea" style="width: auto; margin: 0 auto; text-align: right;" class="auto-style17">
+    <div id="LoginArea" style="width: auto; margin: 0 auto; text-align: right; background-color: silver" class="auto-style17">
         <asp:Button ID="btnLogout" runat="server" Text="Logout" Width="61px" OnClick="btnAdminLogout_Click" />
     </div>
 

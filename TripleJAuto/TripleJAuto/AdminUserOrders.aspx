@@ -1,11 +1,11 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="AdminUserOrders.aspx.cs" Inherits="TripleJAuto.WebForm35" %>
+﻿<%@ Page Title="User Orders" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="AdminUserOrders.aspx.cs" Inherits="TripleJAuto.WebForm35" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div id="UserDetail" style="width: auto; margin: 0 auto; float: left">
         <asp:Label ID="lblUserLogin" runat="server"></asp:Label>
     </div>
 
-    <div id="LoginArea" style="width: auto; margin: 0 auto; text-align: right;" class="auto-style17">
+    <div id="LoginArea" style="width: auto; margin: 0 auto; text-align: right; background-color: silver;" class="auto-style17">
         <asp:Button ID="btnLogout" runat="server" Text="Logout" Width="61px" OnClick="btnAdminLogout_Click" />
     </div>
 
@@ -179,7 +179,7 @@
                 <SortedDescendingCellStyle BackColor="#FFFDF8" />
                 <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
             </asp:GridView>
-            <table style="width:100%;">
+            <table style="width: 100%;">
                 <tr>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>

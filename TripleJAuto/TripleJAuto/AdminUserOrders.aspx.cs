@@ -47,7 +47,7 @@ namespace TripleJAuto
             //Logout admin user
             if (lblUserLogin.Text == "Admin not logged in")
             {
-                Response.Redirect("~/User_administration.aspx");
+                Response.Redirect("~/AdminLogin.aspx");
             }
             else
             {

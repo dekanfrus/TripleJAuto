@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="User_Administration.aspx.cs" Inherits="TripleJAuto.UserAdmin" %>
+﻿<%@ Page Title="User Administration" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="User_Administration.aspx.cs" Inherits="TripleJAuto.UserAdmin" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <style type="text/css">
@@ -315,7 +315,7 @@
         <asp:Label ID="lblUserLogged" runat="server" CssClass="auto-style19"></asp:Label>
     </div>
 
-    <div id="LoginArea" style="width: auto; margin: 0 auto" class="auto-style17">
+    <div id="LoginArea" style="width: auto; margin: 0 auto; background-color: silver" class="auto-style17">
         <asp:Button ID="btnLogin" runat="server" Text="Login" Width="61px" OnClick="btnAdminLogin_Click" />
     </div>
 
