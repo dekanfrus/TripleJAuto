@@ -35,14 +35,14 @@
 }
 
 .container-header {
-    width: 420px;
+    width: 500px;
     color: #7ac1ae;
     font-family: Helvetica;
     text-align: center;
 }
 
 .container table {
-   width: 50%;
+   width: 600px;
    height: auto;
 }
 
@@ -50,7 +50,7 @@
     width: 30%;
     color: #7ac1ae;
     font-size: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 .container a {

@@ -26,8 +26,8 @@
                     <div class="header-content">
                         <asp:TextBox ID="TextBox3" runat="server" placeholder="User Name"></asp:TextBox>
                         <asp:TextBox ID="TextBox4" runat="server" TextMode="Password" placeholder="Password"></asp:TextBox>
-                        <a runat="server" href="~/Home.aspx.cs">Login</a>
-                        <a runat="server" href="~/Home.aspx.cs">Signup</a>
+                        <a runat="server" href="#" id="LoginLink">Login</a>
+                        <a runat="server" href="~/SignUp.aspx">Signup</a>
                     </div>
                 </td>
             </tr>
