@@ -149,6 +149,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="Account.aspx" />
     <Content Include="AdminWishList.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -218,6 +219,13 @@
     <Content Include="Parts.master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Account.aspx.cs">
+      <DependentUpon>Account.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account.aspx.designer.cs">
+      <DependentUpon>Account.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin.Master.cs">
       <DependentUpon>Admin.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -232,6 +240,8 @@
     <Compile Include="AdminWishList.aspx.designer.cs">
       <DependentUpon>AdminWishList.aspx</DependentUpon>
     </Compile>
+    <Content Include="App_Code\Cart.cs" />
+    <Content Include="App_Code\CartList.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>

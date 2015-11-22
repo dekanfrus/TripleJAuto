@@ -11,7 +11,25 @@ namespace TripleJAuto
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            FormView1.Visible = false;
 
+            try
+            {
+                string userUsername = (string)Session["Username"];
+                string userUserFName = (string)Session["FName"];
+                string userUserLName = (string)Session["LName"];
+                int userID = (int)Session["UserID"];
+
+                lblUserFName.Text = "Welcome " + userUserFName;
+
+                FormView1.Visible = true;
+            }
+            catch
+            {
+                FormView1.Visible = false;
+                lblUserFName.Text = "You must be logged in to edit your account";
+
+            }
         }
     }
 }

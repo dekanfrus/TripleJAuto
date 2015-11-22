@@ -46,6 +46,7 @@
                             <li><a runat="server" href="~/Brakes.aspx">Brakes</a></li>
                             <li><a runat="server" href="~/engineParts.aspx">Engine Parts & Mounts</a></li>
                             <li><a runat="server" href="~/exhaust.aspx">Exhaust</a></li>
+                            <li><a runat="server" href="~/Account.aspx">Your Account</a></li>
                             <li><a runat="server" href="~/AdminLogin.aspx">Site Admin</a></li>
                         </ul>
                     </div>
