@@ -24,10 +24,11 @@
                 </td>
                 <td>
                     <div class="header-content">
-                        <asp:TextBox ID="TextBox3" runat="server" placeholder="User Name"></asp:TextBox>
-                        <asp:TextBox ID="TextBox4" runat="server" TextMode="Password" placeholder="Password"></asp:TextBox>
-                        <a runat="server" href="#" id="LoginLink">Login</a>
+                        <asp:TextBox ID="txtUsername" runat="server" placeholder="User Name"></asp:TextBox>
+                        <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" placeholder="Password"></asp:TextBox>
+                        <asp:LinkButton ID="btnLogin" runat="server" OnClick="btnLogin_Click">Login</asp:LinkButton>
                         <a runat="server" href="~/SignUp.aspx">Signup</a>
+                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:WebsiteConnectionString %>" SelectCommand="SELECT [UserUsername], [UserPassword] FROM [User]"></asp:SqlDataSource>
                     </div>
                 </td>
             </tr>

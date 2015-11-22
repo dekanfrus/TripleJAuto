@@ -54,17 +54,19 @@ namespace TripleJAuto
             string Zip = txtZip.Text;
             string Country = txtCountry.Text;
             string Phone = txtPhone.Text;
+            int Admin = 0;
 
             SqlConnection db = new SqlConnection(SqlDataSource1.ConnectionString);
-            db.Open();
             SqlCommand cmd = new SqlCommand();
             cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = "INSERT INTO [User] (UserUsername, UserPassword, UserEmail, UserFName, UserLName, UserStreet, UserCity, UserZip, UserCountry, UserPhone) VALUES ('" + UName + "','" + Password + "','" + Email + "','" + FName + "','" + LName + "','" + Address + "','" + City + "','" + Zip + "','" + Country + "','" + Phone + "')";
+            cmd.CommandText = "INSERT INTO [User] (UserUsername, UserPassword, UserEmail, UserFName, UserLName, UserStreet, UserCity, UserZip, UserCountry, UserPhone, UserAdmin) VALUES ('" + UName + "','" + Password + "','" + Email + "','" + FName + "','" + LName + "','" + Address + "','" + City + "','" + Zip + "','" + Country + "','" + Phone + "','" + Admin + "')";
             cmd.Connection = db;
 
             try
             {
+                db.Open();
                 cmd.ExecuteNonQuery();
+                Response.Redirect("/Home.aspx");
             }
             catch
             {
@@ -74,7 +76,6 @@ namespace TripleJAuto
             finally
             {
                 db.Close();
-                Response.Redirect("/Home.aspx");
             }
 
 

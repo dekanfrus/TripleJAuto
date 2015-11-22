@@ -16,7 +16,7 @@
                 <td><img src="/images/ac_clutch.jpg" height='200px' width='200px' /></td>
             </tr>
             <tr>
-                <td><a runat="server" href="~/ac_expansion.aspx">A/C Expansion</a></td>
+                <td><a runat="server" href="~/ac_expansion.aspx">A/C Expansion Valve</a></td>
                 <td><a runat="server" href="~/ac_blower.aspx">A/C Blower Motor</a></td>
             </tr>
             <tr>

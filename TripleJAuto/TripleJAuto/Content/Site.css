@@ -30,6 +30,7 @@
 
 .container {
     height: auto;
+    min-height: 400px;
     padding-left: 300px;
     padding-top: 10px;
 }
