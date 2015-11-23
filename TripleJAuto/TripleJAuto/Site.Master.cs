@@ -69,6 +69,7 @@ namespace TripleJAuto
 
                     SqlCommand cmdGetFName = new SqlCommand(getUserFName, db);
                     SqlCommand cmdGetLName = new SqlCommand(getUserLName, db);
+                    SqlCommand cmdGetUserID = new SqlCommand(getUserID, db);
 
                     var userFirstName = cmdGetFName.ExecuteScalar();
                     var userLastName = cmdGetLName.ExecuteScalar();
@@ -81,7 +82,7 @@ namespace TripleJAuto
 
                     db.Close();
 
-                    Response.Redirect("/Home.aspx");
+                    Response.Redirect("/Account.aspx");
                 }
                 else
                 {

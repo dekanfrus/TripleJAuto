@@ -280,6 +280,40 @@ GO
 ALTER TABLE [dbo].[Wishlist] CHECK CONSTRAINT [FK_Wishlist_User]
 GO
 
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[OrderDetail](
+	[OrderDetailID] [int] IDENTITY(1,1) NOT NULL,
+	[OrderID] [int] NOT NULL,
+	[PartID] [varchar](50) NOT NULL
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+ALTER TABLE [dbo].[OrderDetail]  WITH CHECK ADD  CONSTRAINT [FK_OrderDetail_Order] FOREIGN KEY([OrderID])
+REFERENCES [dbo].[Order] ([OrderID])
+GO
+
+ALTER TABLE [dbo].[OrderDetail] CHECK CONSTRAINT [FK_OrderDetail_Order]
+GO
+
+ALTER TABLE [dbo].[OrderDetail]  WITH CHECK ADD  CONSTRAINT [FK_OrderDetail_Part] FOREIGN KEY([PartID])
+REFERENCES [dbo].[Part] ([PartID])
+GO
+
+ALTER TABLE [dbo].[OrderDetail] CHECK CONSTRAINT [FK_OrderDetail_Part]
+GO
+
 INSERT INTO [User] (UserUsername, UserPassword, UserEmail, UserFName, UserLName, UserCountry, UserStreet, UserCity, UserZip, UserPhone) 
 VALUES ('GHopkins', 'Hopk!ns73', 'ghopkins@hopkins.net', 'Gene', 'Hopkins', 'USA', '112 Street', 'Corpus Christi', '78412', '3611234567');
 	INSERT INTO [User] (UserUsername, UserPassword, UserEmail, UserFName, UserLName, UserCountry, UserStreet, UserCity, UserZip, UserPhone) 

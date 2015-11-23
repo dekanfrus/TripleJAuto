@@ -4,7 +4,7 @@
     <asp:Label ID="lblUserFName" runat="server" Text="Label"></asp:Label>
     <br />
     <br />
-    <asp:FormView ID="FormView1" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataSourceID="SqlDataSource1" ForeColor="Black" GridLines="Horizontal" DataKeyNames="UserID" OnPageIndexChanging="FormView1_PageIndexChanging">
+    <asp:FormView ID="FormView1" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataSourceID="SqlDataSource1" ForeColor="Black" GridLines="Horizontal" DataKeyNames="UserID">
     <EditItemTemplate>
         UserUsername:
         <asp:TextBox ID="UserUsernameTextBox" runat="server" Text='<%# Bind("UserUsername") %>' />
@@ -131,6 +131,10 @@
         </Columns>
     </asp:GridView>
     <br />
+    <asp:DetailsView ID="DetailsView1" runat="server" DataSourceID="SqlDataSource3" Height="50px" Width="125px">
+    </asp:DetailsView>
+    <br />
+    <asp:SqlDataSource ID="SqlDataSource3" runat="server"></asp:SqlDataSource>
 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:WebsiteConnectionString %>" SelectCommand= "SELECT [UserID], [UserUsername], [UserPassword], [UserEmail], [UserFName], [UserLName], [UserStreet], [UserCity], [UserZip], [UserCountry], [UserPhone] FROM [User] WHERE ([UserUsername] = @UserUsername)" ConflictDetection="CompareAllValues" DeleteCommand="DELETE FROM [User] WHERE [UserID] = @original_UserID AND [UserUsername] = @original_UserUsername AND [UserPassword] = @original_UserPassword AND [UserEmail] = @original_UserEmail AND [UserFName] = @original_UserFName AND [UserLName] = @original_UserLName AND [UserStreet] = @original_UserStreet AND [UserCity] = @original_UserCity AND [UserZip] = @original_UserZip AND [UserCountry] = @original_UserCountry AND [UserPhone] = @original_UserPhone" InsertCommand="INSERT INTO [User] ([UserUsername], [UserPassword], [UserEmail], [UserFName], [UserLName], [UserStreet], [UserCity], [UserZip], [UserCountry], [UserPhone]) VALUES (@UserUsername, @UserPassword, @UserEmail, @UserFName, @UserLName, @UserStreet, @UserCity, @UserZip, @UserCountry, @UserPhone)" OldValuesParameterFormatString="original_{0}" UpdateCommand="UPDATE [User] SET [UserUsername] = @UserUsername, [UserPassword] = @UserPassword, [UserEmail] = @UserEmail, [UserFName] = @UserFName, [UserLName] = @UserLName, [UserStreet] = @UserStreet, [UserCity] = @UserCity, [UserZip] = @UserZip, [UserCountry] = @UserCountry, [UserPhone] = @UserPhone WHERE [UserID] = @original_UserID AND [UserUsername] = @original_UserUsername AND [UserPassword] = @original_UserPassword AND [UserEmail] = @original_UserEmail AND [UserFName] = @original_UserFName AND [UserLName] = @original_UserLName AND [UserStreet] = @original_UserStreet AND [UserCity] = @original_UserCity AND [UserZip] = @original_UserZip AND [UserCountry] = @original_UserCountry AND [UserPhone] = @original_UserPhone">
     <DeleteParameters>
         <asp:Parameter Name="original_UserID" Type="Int32" />

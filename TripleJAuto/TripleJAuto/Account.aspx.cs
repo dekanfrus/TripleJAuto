@@ -12,6 +12,7 @@ namespace TripleJAuto
         protected void Page_Load(object sender, EventArgs e)
         {
             FormView1.Visible = false;
+            GridView1.Visible = false;
 
             try
             {
@@ -23,6 +24,7 @@ namespace TripleJAuto
                 lblUserFName.Text = "Welcome " + userUserFName;
 
                 FormView1.Visible = true;
+                GridView1.Visible = true;
             }
             catch
             {
