@@ -243,6 +243,7 @@
     <Compile Include="AdminWishList.aspx.designer.cs">
       <DependentUpon>AdminWishList.aspx</DependentUpon>
     </Compile>
+    <Content Include="App_Code\CartItemList.cs" />
     <Compile Include="Cart.aspx.cs">
       <DependentUpon>Cart.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -252,7 +253,6 @@
     </Compile>
     <Content Include="App_Code\CartItem.cs" />
     <Content Include="App_Code\Product.cs" />
-    <Content Include="App_Code\CartItemList.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
