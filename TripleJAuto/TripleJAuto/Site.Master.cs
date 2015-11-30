@@ -86,7 +86,7 @@ namespace TripleJAuto
                 }
                 else
                 {
-                    Response.Redirect("SignUp.aspx");
+                    Response.Redirect("/SignUp.aspx");
                 }
             }
             catch

@@ -205,6 +205,7 @@
     <Content Include="AdminUserOrders.aspx" />
     <Content Include="AdminLogin.aspx" />
     <Content Include="SignUp.aspx" />
+    <Content Include="Cart.aspx" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -242,9 +243,16 @@
     <Compile Include="AdminWishList.aspx.designer.cs">
       <DependentUpon>AdminWishList.aspx</DependentUpon>
     </Compile>
-    <Content Include="App_Code\CartList.cs" />
-    <Content Include="App_Code\ProductContext.cs" />
+    <Compile Include="Cart.aspx.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cart.aspx.designer.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+    </Compile>
     <Content Include="App_Code\CartItem.cs" />
+    <Content Include="App_Code\Product.cs" />
+    <Content Include="App_Code\CartItemList.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
