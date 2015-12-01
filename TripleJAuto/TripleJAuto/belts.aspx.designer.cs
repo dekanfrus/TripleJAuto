@@ -10,7 +10,7 @@
 namespace TripleJAuto {
     
     
-    public partial class WebForm11 {
+    public partial class belts {
         
         /// <summary>
         /// FormView1 control.

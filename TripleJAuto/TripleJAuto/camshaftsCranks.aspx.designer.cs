@@ -10,7 +10,7 @@
 namespace TripleJAuto {
     
     
-    public partial class WebForm26 {
+    public partial class camshaftsCranks {
         
         /// <summary>
         /// FormView1 control.

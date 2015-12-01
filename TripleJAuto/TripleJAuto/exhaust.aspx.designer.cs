@@ -11,7 +11,7 @@ namespace TripleJAuto
 {
 
 
-    public partial class WebForm23
+    public partial class exhaust
     {
     }
 }

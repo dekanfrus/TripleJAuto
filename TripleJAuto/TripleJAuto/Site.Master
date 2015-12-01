@@ -24,10 +24,9 @@
                 </td>
                 <td>
                     <div class="header-content">
-                        <asp:TextBox ID="txtUsername" runat="server" placeholder="User Name"></asp:TextBox>
-                        <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" placeholder="Password"></asp:TextBox>
                         <asp:LinkButton ID="btnLogin" runat="server" OnClick="btnLogin_Click">Login</asp:LinkButton>
-                        <a runat="server" href="~/SignUp.aspx">Signup</a>
+                        <asp:LinkButton ID="btnSignup" runat="server" OnClick="btnSignup_Click">SignUp</asp:LinkButton>
+                        <asp:Label ID="lblUsername" runat="server"></asp:Label>
                         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:WebsiteConnectionString %>" SelectCommand="SELECT [UserUsername], [UserPassword] FROM [User]"></asp:SqlDataSource>
                     </div>
                 </td>
@@ -48,6 +47,7 @@
                             <li><a runat="server" href="~/exhaust.aspx">Exhaust</a></li>
                             <li><a runat="server" href="~/Account.aspx">Your Account</a></li>
                             <li><a runat="server" href="~/AdminLogin.aspx">Site Admin</a></li>
+
                         </ul>
                     </div>
                 </td>

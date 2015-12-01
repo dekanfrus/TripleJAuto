@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Parts.master" AutoEventWireup="true" CodeBehind="exhaust.aspx.cs" Inherits="TripleJAuto.WebForm23" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Parts.master" AutoEventWireup="true" CodeBehind="exhaust.aspx.cs" Inherits="TripleJAuto.exhaust" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="content" runat="server">
     <link href="Content/Site.css" rel="stylesheet" />
     <div class="container">

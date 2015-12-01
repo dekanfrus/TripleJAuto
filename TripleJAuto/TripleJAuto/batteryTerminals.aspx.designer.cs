@@ -10,7 +10,7 @@
 namespace TripleJAuto {
     
     
-    public partial class WebForm18 {
+    public partial class batteryTerminals {
         
         /// <summary>
         /// FormView1 control.

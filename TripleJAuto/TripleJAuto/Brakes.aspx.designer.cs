@@ -10,6 +10,6 @@
 namespace TripleJAuto {
     
     
-    public partial class WebForm1 {
+    public partial class Brakes {
     }
 }

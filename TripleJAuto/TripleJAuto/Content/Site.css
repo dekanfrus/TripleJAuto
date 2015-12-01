@@ -13,10 +13,12 @@
     width: 700px;
     word-spacing: 10px;
     text-align: right;
+    font-size: 18px;
     padding-right: 100px;
     padding-top: 110px;
     padding-bottom: 10px;
     background-color:  #717D8C;
+    color: #7ac1ae;
 
 }
 
@@ -30,6 +32,7 @@
 
 .container {
     height: auto;
+    color: #7ac1ae;
     min-height: 400px;
     padding-left: 300px;
     padding-top: 10px;

@@ -10,7 +10,7 @@
 namespace TripleJAuto {
     
     
-    public partial class WebForm14 {
+    public partial class pads {
         
         /// <summary>
         /// FormView1 control.

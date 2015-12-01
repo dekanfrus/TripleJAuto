@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Parts.master" AutoEventWireup="true" CodeBehind="ac_clutch.aspx.cs" Inherits="TripleJAuto.WebForm8" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Parts.master" AutoEventWireup="true" CodeBehind="ac_clutch.aspx.cs" Inherits="TripleJAuto.ac_clutch" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="content" runat="server">
     <div class="container">

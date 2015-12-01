@@ -10,7 +10,7 @@
 namespace TripleJAuto {
     
     
-    public partial class WebForm9 {
+    public partial class ac_expansion {
         
         /// <summary>
         /// FormView1 control.

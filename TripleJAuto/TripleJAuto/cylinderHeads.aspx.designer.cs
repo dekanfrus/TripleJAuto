@@ -10,7 +10,7 @@
 namespace TripleJAuto {
     
     
-    public partial class WebForm25 {
+    public partial class cylinderHeads {
         
         /// <summary>
         /// FormView1 control.

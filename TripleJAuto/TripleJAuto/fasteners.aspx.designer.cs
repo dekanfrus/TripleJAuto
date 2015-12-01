@@ -10,7 +10,7 @@
 namespace TripleJAuto {
     
     
-    public partial class WebForm20 {
+    public partial class fasteners {
         
         /// <summary>
         /// FormView1 control.

@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace TripleJAuto
 {
-    public partial class WebForm11 : System.Web.UI.Page
+    public partial class belts : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

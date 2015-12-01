@@ -10,7 +10,7 @@
 namespace TripleJAuto {
     
     
-    public partial class WebForm8 {
+    public partial class ac_clutch {
         
         /// <summary>
         /// FormView1 control.

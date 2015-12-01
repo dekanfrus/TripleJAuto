@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Parts.master" AutoEventWireup="true" CodeBehind="calipers.aspx.cs" Inherits="TripleJAuto.WebForm15" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Parts.master" AutoEventWireup="true" CodeBehind="calipers.aspx.cs" Inherits="TripleJAuto.calipers" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="content" runat="server">
 <div class="container">
         <div class="container-header">

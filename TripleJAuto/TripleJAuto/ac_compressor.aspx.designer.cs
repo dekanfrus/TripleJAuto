@@ -10,7 +10,7 @@
 namespace TripleJAuto {
     
     
-    public partial class WebForm7 {
+    public partial class ac_compressor {
         
         /// <summary>
         /// FormView1 control.

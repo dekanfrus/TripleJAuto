@@ -10,7 +10,7 @@
 namespace TripleJAuto {
     
     
-    public partial class WebForm21 {
+    public partial class paint {
         
         /// <summary>
         /// FormView1 control.

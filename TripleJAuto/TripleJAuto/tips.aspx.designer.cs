@@ -10,7 +10,7 @@
 namespace TripleJAuto {
     
     
-    public partial class WebForm31 {
+    public partial class tips {
         
         /// <summary>
         /// FormView1 control.

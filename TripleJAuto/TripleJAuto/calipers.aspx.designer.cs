@@ -10,7 +10,7 @@
 namespace TripleJAuto {
     
     
-    public partial class WebForm15 {
+    public partial class calipers {
         
         /// <summary>
         /// FormView1 control.

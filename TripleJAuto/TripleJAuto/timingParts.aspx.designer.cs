@@ -10,7 +10,7 @@
 namespace TripleJAuto {
     
     
-    public partial class WebForm27 {
+    public partial class timingParts {
         
         /// <summary>
         /// FormView1 control.

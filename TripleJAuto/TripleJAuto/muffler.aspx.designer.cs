@@ -10,7 +10,7 @@
 namespace TripleJAuto {
     
     
-    public partial class WebForm30 {
+    public partial class muffler {
         
         /// <summary>
         /// FormView1 control.

@@ -11,7 +11,7 @@ namespace TripleJAuto
 {
 
 
-    public partial class WebForm2
+    public partial class Home
     {
     }
 }

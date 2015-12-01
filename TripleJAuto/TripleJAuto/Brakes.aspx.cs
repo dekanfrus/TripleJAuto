@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace TripleJAuto
 {
-    public partial class WebForm1 : System.Web.UI.Page
+    public partial class Brakes : System.Web.UI.Page
     {
         //
     }

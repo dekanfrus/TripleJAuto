@@ -10,7 +10,7 @@
 namespace TripleJAuto {
     
     
-    public partial class WebForm12 {
+    public partial class hoses {
         
         /// <summary>
         /// FormView1 control.

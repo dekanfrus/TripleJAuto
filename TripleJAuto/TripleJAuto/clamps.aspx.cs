@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace TripleJAuto
 {
-    public partial class WebForm28 : System.Web.UI.Page
+    public partial class clamps : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

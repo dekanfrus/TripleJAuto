@@ -10,7 +10,7 @@
 namespace TripleJAuto {
     
     
-    public partial class WebForm24 {
+    public partial class mounts {
         
         /// <summary>
         /// FormView1 control.

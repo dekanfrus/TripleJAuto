@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Parts.master" AutoEventWireup="true" CodeBehind="batteryChargers.aspx.cs" Inherits="TripleJAuto.WebForm17" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Parts.master" AutoEventWireup="true" CodeBehind="batteryChargers.aspx.cs" Inherits="TripleJAuto.batteryChargers" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="content" runat="server">
     <div class="container">
         <div class="container-header">

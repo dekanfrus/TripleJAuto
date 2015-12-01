@@ -10,7 +10,7 @@
 namespace TripleJAuto {
     
     
-    public partial class WebForm19 {
+    public partial class bodyParts {
         
         /// <summary>
         /// FormView1 control.
